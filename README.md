@@ -1,11 +1,8 @@
-# Premium Editorial — Motion & Design System
+# Motion & Composition System
 
-A design system for building fully-animated, high-end marketing sites. Restrained palette, one
-heroic typeface, extreme scale contrast, and motion driven by scroll position rather than page load.
-
-Derived from three references: the Cartier *Shaping Movement* site, a product-editorial redesign
-(oversized lowercase grotesque, cutouts layered over type), and a portfolio site using a
-cursor-reactive 3D hero and infinite marquees.
+Animation and visual structure for high-end marketing sites. **No colour, no typography, no
+content opinions** — those are supplied separately. This describes how things move and how the
+frame is composed, nothing else.
 
 ---
 
@@ -13,37 +10,20 @@ cursor-reactive 3D hero and infinite marquees.
 
 ```
 system/
-  motion-visual-system.md      Motion + composition spec. Colour-agnostic — the canonical doc.
-  motion-system-board.svg      2560×3738 spec board. Drag into Figma; imports as editable layers.
-  ATELIER-design-system.md     Full system including colour and typography, two skins.
-  claude-design-brief.md       Condensed, paste-ready brief for an AI design tool.
-tokens/
-  tokens.css                   Custom-property token sheet. Two skins: maison (warm) / studio (cool).
+  motion-visual-system.md      The spec. Easing, durations, stagger, twelve patterns, composition.
+  motion-system-board.svg      2560x3738 spec board. Drag into Figma; imports as editable layers.
 site/
-  meridian.html                Working reference build. Single file, zero dependencies.
+  meridian.html                Reference build. Single file, zero dependencies, all patterns running.
 ```
 
 Figma source of the spec board:
 <https://www.figma.com/design/e36vx2K5PlnUiQY8PbQrxY>
 
----
-
-## Quick start
-
-**Building a site:** open `site/meridian.html` in a browser to see the system running, then paste
-`tokens/tokens.css` above your stylesheet and set `data-skin="maison"` or `"studio"` on `<html>`.
-
-**Briefing a design tool:** paste `system/claude-design-brief.md`. It's written as constraints
-rather than options, so the tool has no room to drift into defaults.
-
-**Working in Figma:** open the file linked above, or drag `system/motion-system-board.svg` onto a
-canvas.
+To brief a design tool, point it at `system/motion-visual-system.md`.
 
 ---
 
-## The system in one screen
-
-**Easing — four curves, nothing else.**
+## Easing — four curves, nothing else
 
 | Name | Curve | Use |
 |---|---|---|
@@ -51,54 +31,62 @@ canvas.
 | curtain | `cubic-bezier(.83, 0, .17, 1)` | Transitions, wipes, masks |
 | ui | `cubic-bezier(.25, 1, .5, 1)` | Hover, press |
 | drift | `cubic-bezier(.33, 0, .15, 1)` | Parallax, scroll-scrub |
+| linear | — | Marquees only |
 
-Banned: `ease`, `ease-in-out`, and any spring overshooting past 1.02.
+Banned: `ease`, `ease-in-out`, `ease-in`, and any spring overshooting past 1.02.
 
-**Durations:** 120 · 240 · 480 · 900 · 1400ms. Never an arbitrary number.
+## Duration ladder
 
-**Stagger:** lines 90ms · words 60ms · chars 28ms (≤3 words only) · grid 70ms.
+`120ms` · `240ms` · `480ms` · `900ms` · `1400ms` — never an arbitrary number.
 
-**Tracking** is the single biggest premium tell — large type tightens (`−0.045em` at ≥80px),
-uppercase micro-labels open (`+0.2em`). Uniform tracking is the loudest amateur signal.
+## Stagger
 
-**Twelve patterns.** Every section uses one: line mask reveal · media settle · pinned scrub ·
-horizontal marquee · layer parallax · sticky swap · magnetic cursor · page curtain ·
-cursor-reactive 3D · infinite marquee · repeating text strip · timeline rail.
+Lines `90ms` · words `60ms` · chars `28ms` (≤3 words only) · grid `70ms`.
 
-**Budget.** Animate only `transform`, `opacity`, `clip-path`, `filter` — never `width`, `height`,
-`top`, `left`, or `margin`. Three animated properties per element, maximum. All scroll-linked work
-through a single `requestAnimationFrame` loop with lerp 0.12. Pin with native `position: sticky`;
-never transform-scroll the page, it breaks sticky.
+---
+
+## Twelve patterns
+
+Every section uses one:
+
+**01** line mask reveal · **02** media settle · **03** pinned scrub · **04** horizontal marquee ·
+**05** layer parallax · **06** sticky swap · **07** magnetic cursor · **08** page curtain ·
+**09** cursor-reactive 3D · **10** infinite marquee · **11** repeating text strip ·
+**12** timeline rail
+
+Full mechanics for each in `system/motion-visual-system.md`.
+
+---
+
+## Composition
+
+Asymmetry by default — content at columns 1–5 or 7–12 of a 12-column grid, centre only for the
+hero. Oversized elements break the container and clip at the viewport edge. The frame edges stay
+live: wordmark, nav, micro-label triplet, scroll percentage, rotated side tab. Cutout subjects
+overlap headlines — above the type, below the nav. Identical vertical padding on every section.
+
+---
+
+## Budget
+
+Animate only `transform`, `opacity`, `clip-path`, `filter` — never `width`, `height`, `top`,
+`left`, or `margin`. Three animated properties per element, maximum. All scroll-linked work through
+a single `requestAnimationFrame` loop with lerp `0.12`. Pin with native `position: sticky`; never
+transform-scroll the page, it breaks sticky. Split text only after `document.fonts.ready`, or
+measured line masks won't match the final wrap. Under `prefers-reduced-motion`, every scrubbed
+sequence resolves to its **finished** state — never left invisible, never jump-cut.
 
 ---
 
 ## Reference build
 
-`site/meridian.html` implements the system end to end with no dependencies and no build step:
-
-- Preloader with a counting curtain that wipes upward
-- Generative flow-field canvas hero (value-noise particle field, not a video or image)
-- 400vh pinned scrub that draws a watch dial as you scroll — rings stroke on, indices light
-  sequentially, balance wheel spins, hands sweep
-- Horizontal marquee with three layers at different speeds, one counter-direction
-- Sticky feature swap against a generative orbit canvas
-- Custom cursor with lerped ring and magnetic targets
-- Full `prefers-reduced-motion` path — scrubbed sequences resolve to their finished state
-
-Line splitting waits on `document.fonts.ready`, since measured line masks won't match the final
-wrap otherwise. Re-splits on significant resize.
-
----
-
-## Notes on assets
-
-The system describes techniques, not artwork. Any 3D model, photograph, or typeface you use needs
-its own licence — check commercial use and credit the author. The Three.js approach documented in
-pattern 09 needs no external asset or account.
+`site/meridian.html` runs the patterns end to end with no dependencies and no build step —
+preloader curtain, generative canvas hero, a 400vh pinned scrub, layered marquee, sticky swap,
+magnetic cursor, and a full reduced-motion path. Its palette and typeface are placeholders; replace
+them.
 
 ---
 
 ## Licence
 
-MIT for the code and documentation in this repository. Third-party fonts and assets referenced by
-name are not included and carry their own terms.
+MIT. Any 3D model, photograph, or typeface you bring needs its own licence.
