@@ -1,0 +1,439 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2560" height="3738" viewBox="0 0 2560 3738">
+<rect x="0" y="0" width="2560" height="3738" fill="#FFFFFF"/>
+<text x="110" y="120" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="46" font-weight="300" fill="#1A1A1A" text-anchor="start" letter-spacing="-1" opacity="1">MOTION &amp; COMPOSITION SYSTEM</text>
+<text x="110" y="162" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">Animation and visual structure only — colour and type are supplied separately.</text>
+<text x="2450" y="120" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="46" font-weight="300" fill="#C9C9C9" text-anchor="end" letter-spacing="0" opacity="1">01</text>
+<text x="2450" y="162" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="end" letter-spacing="1.2" opacity="1">drag into Figma · every layer editable</text>
+<line x1="110" y1="210" x2="2450" y2="210" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="butt" opacity="1"/>
+<text x="110" y="244" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1.8" opacity="1">(01)</text>
+<text x="164" y="244" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="start" letter-spacing="1.8" opacity="1">EASING</text>
+<text x="2450" y="244" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="end" letter-spacing="1.2" opacity="1">four curves — nothing else is permitted</text>
+<rect x="110.0" y="288" width="555.0" height="470" fill="#FAFAFA" stroke="#E4E4E4" stroke-width="1" rx="0" opacity="1"/>
+<text x="138.0" y="322" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1.4" opacity="1">01</text>
+<text x="184.0" y="322" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="start" letter-spacing="1.4" opacity="1">reveal</text>
+<rect x="138.0" y="346" width="300" height="300" fill="#FFFFFF" stroke="#E4E4E4" stroke-width="1" rx="0" opacity="1"/>
+<line x1="213.0" y1="346" x2="213.0" y2="646" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="138.0" y1="421.0" x2="438.0" y2="421.0" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="288.0" y1="346" x2="288.0" y2="646" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="138.0" y1="496.0" x2="438.0" y2="496.0" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="363.0" y1="346" x2="363.0" y2="646" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="138.0" y1="571.0" x2="438.0" y2="571.0" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="138.0" y1="646" x2="438.0" y2="346" stroke="#C9C9C9" stroke-width="1" stroke-linecap="butt" stroke-dasharray="3 5" opacity="1"/>
+<path d="M 138.00,646.00 L 140.25,632.16 L 142.49,618.74 L 144.73,605.76 L 146.97,593.19 L 149.22,581.04 L 151.49,569.29 L 153.76,557.94 L 156.06,546.98 L 158.38,536.40 L 160.72,526.20 L 163.10,516.38 L 165.51,506.91 L 167.97,497.81 L 170.46,489.05 L 173.00,480.64 L 175.59,472.56 L 178.24,464.82 L 180.95,457.39 L 183.72,450.28 L 186.55,443.49 L 189.46,436.99 L 192.44,430.79 L 195.50,424.87 L 198.64,419.24 L 201.87,413.89 L 205.20,408.80 L 208.61,403.97 L 212.13,399.39 L 215.74,395.07 L 219.47,390.98 L 223.30,387.13 L 227.25,383.50 L 231.32,380.09 L 235.51,376.90 L 239.83,373.91 L 244.27,371.12 L 248.86,368.53 L 253.58,366.11 L 258.44,363.88 L 263.45,361.82 L 268.61,359.92 L 273.92,358.19 L 279.40,356.60 L 285.03,355.16 L 290.84,353.85 L 296.81,352.67 L 302.96,351.62 L 309.28,350.69 L 315.79,349.86 L 322.48,349.14 L 329.37,348.51 L 336.45,347.98 L 343.72,347.52 L 351.20,347.14 L 358.89,346.83 L 366.79,346.59 L 374.90,346.39 L 383.22,346.25 L 391.77,346.14 L 400.55,346.07 L 409.56,346.03 L 418.80,346.01 L 428.28,346.00 L 438.00,346.00" fill="none" stroke="#1A1A1A" stroke-width="2.4" stroke-linecap="round" opacity="1"/>
+<circle cx="186.00" cy="346.00" r="3.5" fill="#8A8A8A"/>
+<circle cx="228.00" cy="346.00" r="3.5" fill="#8A8A8A"/>
+<line x1="138.0" y1="646" x2="186.0" y2="346.0" stroke="#8A8A8A" stroke-width="1" stroke-linecap="butt" stroke-dasharray="2 4" opacity="1"/>
+<line x1="438.0" y1="346" x2="228.0" y2="346.0" stroke="#8A8A8A" stroke-width="1" stroke-linecap="butt" stroke-dasharray="2 4" opacity="1"/>
+<text x="138.0" y="672" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1" opacity="1">position at equal time slices</text>
+<rect x="138.0000000003738" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.14"/>
+<rect x="273.46302907542105" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.21200000000000002"/>
+<rect x="344.0825436394088" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.28400000000000003"/>
+<rect x="378.3457306995698" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.356"/>
+<rect x="395.4930352505948" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.428"/>
+<rect x="404.26747484221" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.5"/>
+<rect x="408.70238581428725" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.5720000000000001"/>
+<rect x="410.8157768320649" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.644"/>
+<rect x="411.6961937810747" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.716"/>
+<rect x="411.96666730608933" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.788"/>
+<rect x="412.0" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.86"/>
+<text x="138.0" y="728" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#1A1A1A" text-anchor="start" letter-spacing="0.4" opacity="1">cubic-bezier(.16, 1, .3, 1)</text>
+<text x="138.0" y="746" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">every entrance. fast start, long settle.</text>
+<rect x="705.0" y="288" width="555.0" height="470" fill="#FAFAFA" stroke="#E4E4E4" stroke-width="1" rx="0" opacity="1"/>
+<text x="733.0" y="322" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1.4" opacity="1">02</text>
+<text x="779.0" y="322" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="start" letter-spacing="1.4" opacity="1">curtain</text>
+<rect x="733.0" y="346" width="300" height="300" fill="#FFFFFF" stroke="#E4E4E4" stroke-width="1" rx="0" opacity="1"/>
+<line x1="808.0" y1="346" x2="808.0" y2="646" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="733.0" y1="421.0" x2="1033.0" y2="421.0" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="883.0" y1="346" x2="883.0" y2="646" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="733.0" y1="496.0" x2="1033.0" y2="496.0" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="958.0" y1="346" x2="958.0" y2="646" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="733.0" y1="571.0" x2="1033.0" y2="571.0" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="733.0" y1="646" x2="1033.0" y2="346" stroke="#C9C9C9" stroke-width="1" stroke-linecap="butt" stroke-dasharray="3 5" opacity="1"/>
+<path d="M 733.00,646.00 L 744.35,645.78 L 755.06,645.14 L 765.16,644.08 L 774.67,642.63 L 783.60,640.79 L 791.98,638.58 L 799.83,636.02 L 807.17,633.11 L 814.01,629.87 L 820.39,626.32 L 826.32,622.46 L 831.81,618.31 L 836.90,613.89 L 841.60,609.21 L 845.92,604.29 L 849.91,599.12 L 853.56,593.74 L 856.91,588.16 L 859.97,582.38 L 862.76,576.42 L 865.31,570.30 L 867.64,564.02 L 869.76,557.61 L 871.69,551.08 L 873.46,544.43 L 875.09,537.69 L 876.60,530.87 L 878.00,523.98 L 879.32,517.03 L 880.58,510.04 L 881.80,503.03 L 883.00,496.00 L 884.20,488.97 L 885.42,481.96 L 886.68,474.97 L 888.00,468.02 L 889.40,461.13 L 890.91,454.31 L 892.54,447.57 L 894.31,440.92 L 896.24,434.39 L 898.36,427.98 L 900.69,421.70 L 903.24,415.58 L 906.03,409.62 L 909.09,403.84 L 912.44,398.26 L 916.09,392.88 L 920.08,387.71 L 924.40,382.79 L 929.10,378.11 L 934.19,373.69 L 939.68,369.54 L 945.61,365.68 L 951.99,362.13 L 958.83,358.89 L 966.17,355.98 L 974.02,353.42 L 982.40,351.21 L 991.33,349.37 L 1000.84,347.92 L 1010.94,346.86 L 1021.65,346.22 L 1033.00,346.00" fill="none" stroke="#1A1A1A" stroke-width="2.4" stroke-linecap="round" opacity="1"/>
+<circle cx="982.00" cy="646.00" r="3.5" fill="#8A8A8A"/>
+<circle cx="784.00" cy="346.00" r="3.5" fill="#8A8A8A"/>
+<line x1="733.0" y1="646" x2="982.0" y2="646.0" stroke="#8A8A8A" stroke-width="1" stroke-linecap="butt" stroke-dasharray="2 4" opacity="1"/>
+<line x1="1033.0" y1="346" x2="784.0" y2="346.0" stroke="#8A8A8A" stroke-width="1" stroke-linecap="butt" stroke-dasharray="2 4" opacity="1"/>
+<text x="733.0" y="672" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1" opacity="1">position at equal time slices</text>
+<rect x="733.0" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.14"/>
+<rect x="734.5070320305858" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.21200000000000002"/>
+<rect x="740.0507583422616" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.28400000000000003"/>
+<rect x="752.4643153386877" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.356"/>
+<rect x="779.932185932626" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.428"/>
+<rect x="869.9999999998131" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.5"/>
+<rect x="960.067814067374" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.5720000000000001"/>
+<rect x="987.5356846613123" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.644"/>
+<rect x="999.9492416577384" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.716"/>
+<rect x="1005.4929679694142" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.788"/>
+<rect x="1007.0" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.86"/>
+<text x="733.0" y="728" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#1A1A1A" text-anchor="start" letter-spacing="0.4" opacity="1">cubic-bezier(.83, 0, .17, 1)</text>
+<text x="733.0" y="746" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">transitions, wipes, masks. symmetric.</text>
+<rect x="1300.0" y="288" width="555.0" height="470" fill="#FAFAFA" stroke="#E4E4E4" stroke-width="1" rx="0" opacity="1"/>
+<text x="1328.0" y="322" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1.4" opacity="1">03</text>
+<text x="1374.0" y="322" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="start" letter-spacing="1.4" opacity="1">ui</text>
+<rect x="1328.0" y="346" width="300" height="300" fill="#FFFFFF" stroke="#E4E4E4" stroke-width="1" rx="0" opacity="1"/>
+<line x1="1403.0" y1="346" x2="1403.0" y2="646" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="1328.0" y1="421.0" x2="1628.0" y2="421.0" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="1478.0" y1="346" x2="1478.0" y2="646" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="1328.0" y1="496.0" x2="1628.0" y2="496.0" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="1553.0" y1="346" x2="1553.0" y2="646" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="1328.0" y1="571.0" x2="1628.0" y2="571.0" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="1328.0" y1="646" x2="1628.0" y2="346" stroke="#C9C9C9" stroke-width="1" stroke-linecap="butt" stroke-dasharray="3 5" opacity="1"/>
+<path d="M 1328.00,646.00 L 1331.52,632.16 L 1335.03,618.74 L 1338.55,605.76 L 1342.08,593.19 L 1345.61,581.04 L 1349.16,569.29 L 1352.71,557.94 L 1356.27,546.98 L 1359.85,536.40 L 1363.44,526.20 L 1367.05,516.38 L 1370.68,506.91 L 1374.33,497.81 L 1378.00,489.05 L 1381.70,480.64 L 1385.42,472.56 L 1389.17,464.82 L 1392.95,457.39 L 1396.76,450.28 L 1400.60,443.49 L 1404.48,436.99 L 1408.39,430.79 L 1412.34,424.87 L 1416.33,419.24 L 1420.36,413.89 L 1424.43,408.80 L 1428.55,403.97 L 1432.72,399.39 L 1436.93,395.07 L 1441.19,390.98 L 1445.51,387.13 L 1449.88,383.50 L 1454.30,380.09 L 1458.78,376.90 L 1463.31,373.91 L 1467.91,371.12 L 1472.57,368.53 L 1477.29,366.11 L 1482.08,363.88 L 1486.94,361.82 L 1491.86,359.92 L 1496.85,358.19 L 1501.92,356.60 L 1507.06,355.16 L 1512.27,353.85 L 1517.57,352.67 L 1522.94,351.62 L 1528.39,350.69 L 1533.93,349.86 L 1539.54,349.14 L 1545.25,348.51 L 1551.04,347.98 L 1556.92,347.52 L 1562.89,347.14 L 1568.96,346.83 L 1575.12,346.59 L 1581.37,346.39 L 1587.73,346.25 L 1594.18,346.14 L 1600.74,346.07 L 1607.39,346.03 L 1614.15,346.01 L 1621.02,346.00 L 1628.00,346.00" fill="none" stroke="#1A1A1A" stroke-width="2.4" stroke-linecap="round" opacity="1"/>
+<circle cx="1403.00" cy="346.00" r="3.5" fill="#8A8A8A"/>
+<circle cx="1478.00" cy="346.00" r="3.5" fill="#8A8A8A"/>
+<line x1="1328.0" y1="646" x2="1403.0" y2="346.0" stroke="#8A8A8A" stroke-width="1" stroke-linecap="butt" stroke-dasharray="2 4" opacity="1"/>
+<line x1="1628.0" y1="346" x2="1478.0" y2="346.0" stroke="#8A8A8A" stroke-width="1" stroke-linecap="butt" stroke-dasharray="2 4" opacity="1"/>
+<text x="1328.0" y="672" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1" opacity="1">position at equal time slices</text>
+<rect x="1328.0000000003738" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.14"/>
+<rect x="1423.1563582634112" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.21200000000000002"/>
+<rect x="1491.3088862574718" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.28400000000000003"/>
+<rect x="1537.1687177090473" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.356"/>
+<rect x="1566.3578973665635" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.428"/>
+<rect x="1583.9422511661683" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.5"/>
+<rect x="1593.8638301397996" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.5720000000000001"/>
+<rect x="1598.960630739697" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.644"/>
+<rect x="1601.1974006452742" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.716"/>
+<rect x="1601.9100203323362" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.788"/>
+<rect x="1602.0" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.86"/>
+<text x="1328.0" y="728" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#1A1A1A" text-anchor="start" letter-spacing="0.4" opacity="1">cubic-bezier(.25, 1, .5, 1)</text>
+<text x="1328.0" y="746" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">hover, press, small state changes.</text>
+<rect x="1895.0" y="288" width="555.0" height="470" fill="#FAFAFA" stroke="#E4E4E4" stroke-width="1" rx="0" opacity="1"/>
+<text x="1923.0" y="322" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1.4" opacity="1">04</text>
+<text x="1969.0" y="322" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="start" letter-spacing="1.4" opacity="1">drift</text>
+<rect x="1923.0" y="346" width="300" height="300" fill="#FFFFFF" stroke="#E4E4E4" stroke-width="1" rx="0" opacity="1"/>
+<line x1="1998.0" y1="346" x2="1998.0" y2="646" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="1923.0" y1="421.0" x2="2223.0" y2="421.0" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="2073.0" y1="346" x2="2073.0" y2="646" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="1923.0" y1="496.0" x2="2223.0" y2="496.0" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="2148.0" y1="346" x2="2148.0" y2="646" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="1923.0" y1="571.0" x2="2223.0" y2="571.0" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="1923.0" y1="646" x2="2223.0" y2="346" stroke="#C9C9C9" stroke-width="1" stroke-linecap="butt" stroke-dasharray="3 5" opacity="1"/>
+<path d="M 1923.00,646.00 L 1927.53,645.78 L 1931.85,645.14 L 1935.96,644.08 L 1939.88,642.63 L 1943.62,640.79 L 1947.19,638.58 L 1950.60,636.02 L 1953.86,633.11 L 1956.97,629.87 L 1959.96,626.32 L 1962.83,622.46 L 1965.60,618.31 L 1968.26,613.89 L 1970.84,609.21 L 1973.34,604.29 L 1975.78,599.12 L 1978.16,593.74 L 1980.50,588.16 L 1982.81,582.38 L 1985.09,576.42 L 1987.36,570.30 L 1989.62,564.02 L 1991.90,557.61 L 1994.19,551.08 L 1996.52,544.43 L 1998.88,537.69 L 2001.29,530.87 L 2003.77,523.98 L 2006.32,517.03 L 2008.95,510.04 L 2011.67,503.03 L 2014.50,496.00 L 2017.44,488.97 L 2020.51,481.96 L 2023.71,474.97 L 2027.06,468.02 L 2030.56,461.13 L 2034.23,454.31 L 2038.08,447.57 L 2042.12,440.92 L 2046.36,434.39 L 2050.80,427.98 L 2055.47,421.70 L 2060.37,415.58 L 2065.50,409.62 L 2070.89,403.84 L 2076.54,398.26 L 2082.47,392.88 L 2088.68,387.71 L 2095.18,382.79 L 2101.99,378.11 L 2109.11,373.69 L 2116.55,369.54 L 2124.34,365.68 L 2132.47,362.13 L 2140.96,358.89 L 2149.81,355.98 L 2159.05,353.42 L 2168.67,351.21 L 2178.70,349.37 L 2189.13,347.92 L 2199.98,346.86 L 2211.27,346.22 L 2223.00,346.00" fill="none" stroke="#1A1A1A" stroke-width="2.4" stroke-linecap="round" opacity="1"/>
+<circle cx="2022.00" cy="646.00" r="3.5" fill="#8A8A8A"/>
+<circle cx="1968.00" cy="346.00" r="3.5" fill="#8A8A8A"/>
+<line x1="1923.0" y1="646" x2="2022.0" y2="646.0" stroke="#8A8A8A" stroke-width="1" stroke-linecap="butt" stroke-dasharray="2 4" opacity="1"/>
+<line x1="2223.0" y1="346" x2="1968.0" y2="346.0" stroke="#8A8A8A" stroke-width="1" stroke-linecap="butt" stroke-dasharray="2 4" opacity="1"/>
+<text x="1923.0" y="672" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1" opacity="1">position at equal time slices</text>
+<rect x="1923.0" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.14"/>
+<rect x="1934.034229278691" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.21200000000000002"/>
+<rect x="1981.5625906495038" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.28400000000000003"/>
+<rect x="2056.624238552894" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.356"/>
+<rect x="2111.5755250947877" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.428"/>
+<rect x="2146.1224616314967" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.5"/>
+<rect x="2168.2787214618547" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.5720000000000001"/>
+<rect x="2182.466172973694" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.644"/>
+<rect x="2191.1056559582526" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.716"/>
+<rect x="2195.6408453820413" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.788"/>
+<rect x="2197.0" y="680" width="26" height="26" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.86"/>
+<text x="1923.0" y="728" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#1A1A1A" text-anchor="start" letter-spacing="0.4" opacity="1">cubic-bezier(.33, 0, .15, 1)</text>
+<text x="1923.0" y="746" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">parallax and scroll-scrub mapping.</text>
+<rect x="110" y="788" width="2340" height="54" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1" rx="0" stroke-dasharray="4 5" opacity="1"/>
+<text x="134" y="821" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="start" letter-spacing="1.8" opacity="1">BANNED</text>
+<text x="240" y="821" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">ease  ·  ease-in-out  ·  ease-in  ·  any spring that overshoots past 1.02  —  browser defaults read as unstyled, overshoot reads as consumer-toy</text>
+<line x1="110" y1="912" x2="2450" y2="912" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="butt" opacity="1"/>
+<text x="110" y="946" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1.8" opacity="1">(02)</text>
+<text x="164" y="946" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="start" letter-spacing="1.8" opacity="1">DURATION LADDER</text>
+<text x="2450" y="946" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="end" letter-spacing="1.2" opacity="1">pick from the ladder — never an arbitrary number</text>
+<text x="110" y="1012" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#1A1A1A" text-anchor="start" letter-spacing="0" opacity="1">instant</text>
+<text x="260" y="1012" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1" opacity="1">120ms</text>
+<line x1="360" y1="1006" x2="2140" y2="1006" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<rect x="360" y="998" width="152.57142857142858" height="17" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="1"/>
+<text x="2164" y="1012" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">colour and opacity on small UI</text>
+<text x="110" y="1074" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#1A1A1A" text-anchor="start" letter-spacing="0" opacity="1">fast</text>
+<text x="260" y="1074" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1" opacity="1">240ms</text>
+<line x1="360" y1="1068" x2="2140" y2="1068" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<rect x="360" y="1060" width="305.14285714285717" height="17" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="1"/>
+<text x="2164" y="1074" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">hover states, underline sweep, nav item</text>
+<text x="110" y="1136" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#1A1A1A" text-anchor="start" letter-spacing="0" opacity="1">base</text>
+<text x="260" y="1136" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1" opacity="1">480ms</text>
+<line x1="360" y1="1130" x2="2140" y2="1130" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<rect x="360" y="1122" width="610.2857142857143" height="17" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="1"/>
+<text x="2164" y="1136" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">card and media reveal, image scale</text>
+<text x="110" y="1198" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#1A1A1A" text-anchor="start" letter-spacing="0" opacity="1">slow</text>
+<text x="260" y="1198" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1" opacity="1">900ms</text>
+<line x1="360" y1="1192" x2="2140" y2="1192" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<rect x="360" y="1184" width="1144.2857142857144" height="17" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="1"/>
+<text x="2164" y="1198" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">headline lines, mask wipes</text>
+<text x="110" y="1260" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#1A1A1A" text-anchor="start" letter-spacing="0" opacity="1">epic</text>
+<text x="260" y="1260" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1" opacity="1">1400ms</text>
+<line x1="360" y1="1254" x2="2140" y2="1254" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<rect x="360" y="1246" width="1780.0" height="17" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="1"/>
+<text x="2164" y="1260" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">page curtain, hero settle</text>
+<line x1="110" y1="1350" x2="2450" y2="1350" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="butt" opacity="1"/>
+<text x="110" y="1384" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1.8" opacity="1">(03)</text>
+<text x="164" y="1384" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="start" letter-spacing="1.8" opacity="1">STAGGER</text>
+<text x="2450" y="1384" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="end" letter-spacing="1.2" opacity="1">offset between siblings in a reveal</text>
+<rect x="110.0" y="1428" width="555.0" height="250" fill="#FAFAFA" stroke="#E4E4E4" stroke-width="1" rx="0" opacity="1"/>
+<text x="138.0" y="1462" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1.4" opacity="1">01</text>
+<text x="184.0" y="1462" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="start" letter-spacing="1.4" opacity="1">lines</text>
+<text x="637.0" y="1462" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="end" letter-spacing="1.4" opacity="1">90ms</text>
+<rect x="138.0" y="1490.0" width="309.38" height="10" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.9"/>
+<line x1="138.0" y1="1495.0" x2="138.0" y2="1495.0" stroke="#C9C9C9" stroke-width="1" stroke-linecap="butt" stroke-dasharray="2 3" opacity="1"/>
+<rect x="154.63333333333333" y="1534.0" width="309.38" height="10" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.6733333333333335"/>
+<line x1="138.0" y1="1539.0" x2="154.63333333333333" y2="1539.0" stroke="#C9C9C9" stroke-width="1" stroke-linecap="butt" stroke-dasharray="2 3" opacity="1"/>
+<rect x="171.26666666666668" y="1578.0" width="309.38" height="10" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.4466666666666667"/>
+<line x1="138.0" y1="1583.0" x2="171.26666666666668" y2="1583.0" stroke="#C9C9C9" stroke-width="1" stroke-linecap="butt" stroke-dasharray="2 3" opacity="1"/>
+<rect x="187.9" y="1622.0" width="309.38" height="10" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.22"/>
+<line x1="138.0" y1="1627.0" x2="187.9" y2="1627.0" stroke="#C9C9C9" stroke-width="1" stroke-linecap="butt" stroke-dasharray="2 3" opacity="1"/>
+<text x="138.0" y="1660" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">headline split by measured line</text>
+<rect x="705.0" y="1428" width="555.0" height="250" fill="#FAFAFA" stroke="#E4E4E4" stroke-width="1" rx="0" opacity="1"/>
+<text x="733.0" y="1462" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1.4" opacity="1">02</text>
+<text x="779.0" y="1462" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="start" letter-spacing="1.4" opacity="1">words</text>
+<text x="1232.0" y="1462" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="end" letter-spacing="1.4" opacity="1">60ms</text>
+<rect x="733.0" y="1490.0" width="309.38" height="10" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.9"/>
+<line x1="733.0" y1="1495.0" x2="733.0" y2="1495.0" stroke="#C9C9C9" stroke-width="1" stroke-linecap="butt" stroke-dasharray="2 3" opacity="1"/>
+<rect x="742.98" y="1516.4" width="309.38" height="10" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.764"/>
+<line x1="733.0" y1="1521.4" x2="742.98" y2="1521.4" stroke="#C9C9C9" stroke-width="1" stroke-linecap="butt" stroke-dasharray="2 3" opacity="1"/>
+<rect x="752.96" y="1542.8" width="309.38" height="10" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.628"/>
+<line x1="733.0" y1="1547.8" x2="752.96" y2="1547.8" stroke="#C9C9C9" stroke-width="1" stroke-linecap="butt" stroke-dasharray="2 3" opacity="1"/>
+<rect x="762.94" y="1569.2" width="309.38" height="10" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.492"/>
+<line x1="733.0" y1="1574.2" x2="762.94" y2="1574.2" stroke="#C9C9C9" stroke-width="1" stroke-linecap="butt" stroke-dasharray="2 3" opacity="1"/>
+<rect x="772.92" y="1595.6" width="309.38" height="10" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.356"/>
+<line x1="733.0" y1="1600.6" x2="772.92" y2="1600.6" stroke="#C9C9C9" stroke-width="1" stroke-linecap="butt" stroke-dasharray="2 3" opacity="1"/>
+<rect x="782.9" y="1622.0" width="309.38" height="10" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.22"/>
+<line x1="733.0" y1="1627.0" x2="782.9" y2="1627.0" stroke="#C9C9C9" stroke-width="1" stroke-linecap="butt" stroke-dasharray="2 3" opacity="1"/>
+<text x="733.0" y="1660" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">short display phrases only</text>
+<rect x="1300.0" y="1428" width="555.0" height="250" fill="#FAFAFA" stroke="#E4E4E4" stroke-width="1" rx="0" opacity="1"/>
+<text x="1328.0" y="1462" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1.4" opacity="1">03</text>
+<text x="1374.0" y="1462" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="start" letter-spacing="1.4" opacity="1">chars</text>
+<text x="1827.0" y="1462" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="end" letter-spacing="1.4" opacity="1">28ms</text>
+<rect x="1328.0" y="1490.0" width="309.38" height="10" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.9"/>
+<line x1="1328.0" y1="1495.0" x2="1328.0" y2="1495.0" stroke="#C9C9C9" stroke-width="1" stroke-linecap="butt" stroke-dasharray="2 3" opacity="1"/>
+<rect x="1334.2375" y="1506.5" width="309.38" height="10" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.8150000000000001"/>
+<line x1="1328.0" y1="1511.5" x2="1334.2375" y2="1511.5" stroke="#C9C9C9" stroke-width="1" stroke-linecap="butt" stroke-dasharray="2 3" opacity="1"/>
+<rect x="1340.475" y="1523.0" width="309.38" height="10" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.73"/>
+<line x1="1328.0" y1="1528.0" x2="1340.475" y2="1528.0" stroke="#C9C9C9" stroke-width="1" stroke-linecap="butt" stroke-dasharray="2 3" opacity="1"/>
+<rect x="1346.7125" y="1539.5" width="309.38" height="10" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.645"/>
+<line x1="1328.0" y1="1544.5" x2="1346.7125" y2="1544.5" stroke="#C9C9C9" stroke-width="1" stroke-linecap="butt" stroke-dasharray="2 3" opacity="1"/>
+<rect x="1352.95" y="1556.0" width="309.38" height="10" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.56"/>
+<line x1="1328.0" y1="1561.0" x2="1352.95" y2="1561.0" stroke="#C9C9C9" stroke-width="1" stroke-linecap="butt" stroke-dasharray="2 3" opacity="1"/>
+<rect x="1359.1875" y="1572.5" width="309.38" height="10" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.475"/>
+<line x1="1328.0" y1="1577.5" x2="1359.1875" y2="1577.5" stroke="#C9C9C9" stroke-width="1" stroke-linecap="butt" stroke-dasharray="2 3" opacity="1"/>
+<rect x="1365.425" y="1589.0" width="309.38" height="10" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.39"/>
+<line x1="1328.0" y1="1594.0" x2="1365.425" y2="1594.0" stroke="#C9C9C9" stroke-width="1" stroke-linecap="butt" stroke-dasharray="2 3" opacity="1"/>
+<rect x="1371.6625" y="1605.5" width="309.38" height="10" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.305"/>
+<line x1="1328.0" y1="1610.5" x2="1371.6625" y2="1610.5" stroke="#C9C9C9" stroke-width="1" stroke-linecap="butt" stroke-dasharray="2 3" opacity="1"/>
+<rect x="1377.9" y="1622.0" width="309.38" height="10" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.22"/>
+<line x1="1328.0" y1="1627.0" x2="1377.9" y2="1627.0" stroke="#C9C9C9" stroke-width="1" stroke-linecap="butt" stroke-dasharray="2 3" opacity="1"/>
+<text x="1328.0" y="1660" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">≤ 3 words. char stagger on a full sentence is the loudest slop signal</text>
+<rect x="1895.0" y="1428" width="555.0" height="250" fill="#FAFAFA" stroke="#E4E4E4" stroke-width="1" rx="0" opacity="1"/>
+<text x="1923.0" y="1462" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1.4" opacity="1">04</text>
+<text x="1969.0" y="1462" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="start" letter-spacing="1.4" opacity="1">grid</text>
+<text x="2422.0" y="1462" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="end" letter-spacing="1.4" opacity="1">70ms</text>
+<rect x="1923.0" y="1490.0" width="309.38" height="10" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.9"/>
+<line x1="1923.0" y1="1495.0" x2="1923.0" y2="1495.0" stroke="#C9C9C9" stroke-width="1" stroke-linecap="butt" stroke-dasharray="2 3" opacity="1"/>
+<rect x="1935.475" y="1523.0" width="309.38" height="10" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.73"/>
+<line x1="1923.0" y1="1528.0" x2="1935.475" y2="1528.0" stroke="#C9C9C9" stroke-width="1" stroke-linecap="butt" stroke-dasharray="2 3" opacity="1"/>
+<rect x="1947.95" y="1556.0" width="309.38" height="10" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.56"/>
+<line x1="1923.0" y1="1561.0" x2="1947.95" y2="1561.0" stroke="#C9C9C9" stroke-width="1" stroke-linecap="butt" stroke-dasharray="2 3" opacity="1"/>
+<rect x="1960.425" y="1589.0" width="309.38" height="10" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.39"/>
+<line x1="1923.0" y1="1594.0" x2="1960.425" y2="1594.0" stroke="#C9C9C9" stroke-width="1" stroke-linecap="butt" stroke-dasharray="2 3" opacity="1"/>
+<rect x="1972.9" y="1622.0" width="309.38" height="10" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.22"/>
+<line x1="1923.0" y1="1627.0" x2="1972.9" y2="1627.0" stroke="#C9C9C9" stroke-width="1" stroke-linecap="butt" stroke-dasharray="2 3" opacity="1"/>
+<text x="1923.0" y="1660" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">cards, list rows, spec table lines</text>
+<line x1="110" y1="1728" x2="2450" y2="1728" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="butt" opacity="1"/>
+<text x="110" y="1762" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1.8" opacity="1">(04)</text>
+<text x="164" y="1762" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="start" letter-spacing="1.8" opacity="1">SCROLL PATTERNS</text>
+<text x="2450" y="1762" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="end" letter-spacing="1.2" opacity="1">every section uses one of these eight</text>
+<rect x="110.0" y="1806" width="555.0" height="430" fill="#FAFAFA" stroke="#E4E4E4" stroke-width="1" rx="0" opacity="1"/>
+<text x="140.0" y="1842" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1.4" opacity="1">01</text>
+<text x="186.0" y="1842" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="start" letter-spacing="1.4" opacity="1">line mask reveal</text>
+<rect x="140.0" y="1870" width="495.0" height="240" fill="#FFFFFF" stroke="#C9C9C9" stroke-width="1.2" rx="0" opacity="1"/>
+<rect x="164.0" y="1904" width="447.0" height="30" fill="none" stroke="#C9C9C9" stroke-width="1" rx="0" stroke-dasharray="3 4" opacity="1"/>
+<rect x="164.0" y="1904.0" width="447.0" height="30.0" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.86"/>
+<rect x="164.0" y="1950" width="447.0" height="30" fill="none" stroke="#C9C9C9" stroke-width="1" rx="0" stroke-dasharray="3 4" opacity="1"/>
+<rect x="164.0" y="1963.5" width="447.0" height="16.5" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.86"/>
+<rect x="164.0" y="1996" width="447.0" height="30" fill="none" stroke="#C9C9C9" stroke-width="1" rx="0" stroke-dasharray="3 4" opacity="1"/>
+<rect x="164.0" y="2026.0" width="447.0" height="0.0" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.86"/>
+<line x1="387.5" y1="2134" x2="387.5" y2="2104" stroke="#1A1A1A" stroke-width="1.6" stroke-linecap="round" opacity="1"/>
+<path d="M 387.5 2104 L 391.16984407753614 2112.217800462811 L 383.83015592246386 2112.217800462811 Z" fill="#1A1A1A"/>
+<text x="140.0" y="2140" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">each line in overflow:hidden;</text>
+<text x="140.0" y="2156" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">inner translateY(110%) → 0</text>
+<text x="140.0" y="2180" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">900ms reveal · 90ms stagger · fires once at 85% viewport · never re-runs on scroll-back</text>
+<rect x="705.0" y="1806" width="555.0" height="430" fill="#FAFAFA" stroke="#E4E4E4" stroke-width="1" rx="0" opacity="1"/>
+<text x="735.0" y="1842" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1.4" opacity="1">02</text>
+<text x="781.0" y="1842" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="start" letter-spacing="1.4" opacity="1">media settle</text>
+<rect x="735.0" y="1870" width="495.0" height="240" fill="#FFFFFF" stroke="#C9C9C9" stroke-width="1.2" rx="0" opacity="1"/>
+<rect x="745.0" y="1880" width="475.0" height="220" fill="#DEDEDE" stroke="none" stroke-width="0" rx="0" opacity="1"/>
+<rect x="745.0" y="1970.8" width="475.0" height="129.2" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.82"/>
+<line x1="745.0" y1="1970.8" x2="1220.0" y2="1970.8" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 4" opacity="1"/>
+<line x1="1190.0" y1="2004.8" x2="1190.0" y2="1888" stroke="#1A1A1A" stroke-width="1.4" stroke-linecap="round" opacity="1"/>
+<path d="M 1190.0 1888 L 1193.669844077536 1896.2178004628108 L 1186.330155922464 1896.2178004628108 Z" fill="#1A1A1A"/>
+<text x="735.0" y="2140" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">clip-path inset(0 0 100% 0) → inset(0)</text>
+<text x="735.0" y="2156" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">image scale(1.06) → 1 mapped to scroll</text>
+<text x="735.0" y="2180" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">1400ms curtain on the wipe, drift on the scale. parent keeps overflow:hidden.</text>
+<rect x="1300.0" y="1806" width="555.0" height="430" fill="#FAFAFA" stroke="#E4E4E4" stroke-width="1" rx="0" opacity="1"/>
+<text x="1330.0" y="1842" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1.4" opacity="1">03</text>
+<text x="1376.0" y="1842" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="start" letter-spacing="1.4" opacity="1">pinned scrub</text>
+<rect x="1330.0" y="1870" width="495.0" height="240" fill="#FFFFFF" stroke="#C9C9C9" stroke-width="1.2" rx="0" opacity="1"/>
+<circle cx="1577.5" cy="1990.0" r="26" fill="none" stroke="#1A1A1A" stroke-width="1.4" stroke-dasharray="49.0 999" opacity="0.9"/>
+<circle cx="1577.5" cy="1990.0" r="44" fill="none" stroke="#1A1A1A" stroke-width="1.4" stroke-dasharray="179.7 999" opacity="0.7"/>
+<circle cx="1577.5" cy="1990.0" r="62" fill="none" stroke="#1A1A1A" stroke-width="1.4" stroke-dasharray="389.6 999" opacity="0.5"/>
+<line x1="1803.0" y1="1884" x2="1803.0" y2="2096" stroke="#C9C9C9" stroke-width="3" stroke-linecap="butt" opacity="1"/>
+<line x1="1803.0" y1="1884" x2="1803.0" y2="2015.44" stroke="#1A1A1A" stroke-width="3" stroke-linecap="butt" opacity="1"/>
+<line x1="1796.0" y1="1915.8" x2="1810.0" y2="1915.8" stroke="#1A1A1A" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="1796.0" y1="1979.4" x2="1810.0" y2="1979.4" stroke="#1A1A1A" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="1796.0" y1="2053.6" x2="1810.0" y2="2053.6" stroke="#1A1A1A" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<text x="1330.0" y="2140" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">pin 300–400vh · map progress 0→1</text>
+<text x="1330.0" y="2156" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">captions crossfade at .15 / .45 / .8</text>
+<text x="1330.0" y="2180" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">native position:sticky. preload the whole sequence behind a numeric counter.</text>
+<rect x="1895.0" y="1806" width="555.0" height="430" fill="#FAFAFA" stroke="#E4E4E4" stroke-width="1" rx="0" opacity="1"/>
+<text x="1925.0" y="1842" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1.4" opacity="1">04</text>
+<text x="1971.0" y="1842" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="start" letter-spacing="1.4" opacity="1">horizontal marquee</text>
+<rect x="1925.0" y="1870" width="495.0" height="240" fill="#FFFFFF" stroke="#C9C9C9" stroke-width="1.2" rx="0" opacity="1"/>
+<clipPath id="mqclip1895"><rect x="1925.0" y="1870" width="495.0" height="240"/></clipPath>
+<g clip-path="url(#mqclip1895)">
+<rect x="1885.0" y="1888.0" width="635.0" height="22" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.8"/>
+<rect x="1825.0" y="1956.0" width="635.0" height="16" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.2"/>
+<rect x="1885.0" y="2012.0" width="635.0" height="12" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.2"/>
+</g>
+<line x1="2172.5" y1="1899.0" x2="2224.5" y2="1899.0" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" opacity="1"/>
+<path d="M 2224.5 1899.0 L 2216.282199537189 1902.669844077536 L 2216.282199537189 1895.330155922464 Z" fill="#FFFFFF"/>
+<line x1="2172.5" y1="1964.0" x2="2120.5" y2="1964.0" stroke="#1A1A1A" stroke-width="1.4" stroke-linecap="round" opacity="1"/>
+<path d="M 2120.5 1964.0 L 2128.717800462811 1960.330155922464 L 2128.717800462811 1967.669844077536 Z" fill="#1A1A1A"/>
+<line x1="2172.5" y1="2018.0" x2="2224.5" y2="2018.0" stroke="#1A1A1A" stroke-width="1.4" stroke-linecap="round" opacity="1"/>
+<path d="M 2224.5 2018.0 L 2216.282199537189 2021.669844077536 L 2216.282199537189 2014.330155922464 Z" fill="#1A1A1A"/>
+<text x="1925.0" y="2140" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">pin · translateX = f(scrollY)</text>
+<text x="1925.0" y="2156" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">travel = scrollWidth − innerWidth</text>
+<text x="1925.0" y="2180" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">layers at different speeds, one running counter-direction. bound the travel so a track never exposes empty space.</text>
+<rect x="110.0" y="2276" width="555.0" height="430" fill="#FAFAFA" stroke="#E4E4E4" stroke-width="1" rx="0" opacity="1"/>
+<text x="140.0" y="2312" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1.4" opacity="1">05</text>
+<text x="186.0" y="2312" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="start" letter-spacing="1.4" opacity="1">layer parallax</text>
+<rect x="140.0" y="2340" width="495.0" height="240" fill="#FFFFFF" stroke="#C9C9C9" stroke-width="1.2" rx="0" opacity="1"/>
+<rect x="174.64999999999998" y="2400.0" width="128.70000000000002" height="120.0" fill="#DEDEDE" stroke="none" stroke-width="0" rx="0" opacity="0.9"/>
+<text x="239.0" y="2392.0" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#8A8A8A" text-anchor="middle" letter-spacing="0" opacity="1">0.75×</text>
+<line x1="239.0" y1="2534.0" x2="239.0" y2="2552.0" stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round" opacity="1"/>
+<path d="M 239.0 2552.0 L 235.33015592246386 2543.782199537189 L 242.66984407753614 2543.782199537189 Z" fill="#1A1A1A"/>
+<rect x="323.15" y="2424.0" width="128.70000000000002" height="72.0" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.85"/>
+<text x="387.5" y="2416.0" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#8A8A8A" text-anchor="middle" letter-spacing="0" opacity="1">1.00×</text>
+<line x1="387.5" y1="2510.0" x2="387.5" y2="2536.0" stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round" opacity="1"/>
+<path d="M 387.5 2536.0 L 383.83015592246386 2527.782199537189 L 391.16984407753614 2527.782199537189 Z" fill="#1A1A1A"/>
+<rect x="461.75" y="2440.8" width="128.70000000000002" height="38.4" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.35"/>
+<text x="526.1" y="2432.8" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#8A8A8A" text-anchor="middle" letter-spacing="0" opacity="1">1.15×</text>
+<line x1="526.1" y1="2493.2" x2="526.1" y2="2527.2" stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round" opacity="1"/>
+<path d="M 526.1 2527.2 L 522.4301559224639 2518.982199537189 L 529.7698440775362 2518.982199537189 Z" fill="#1A1A1A"/>
+<text x="140.0" y="2610" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">background 0.75× · copy 1× · accent 1.15×</text>
+<text x="140.0" y="2650" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">never exceed 1.25× — past that it induces motion sickness and reads cheap.</text>
+<rect x="705.0" y="2276" width="555.0" height="430" fill="#FAFAFA" stroke="#E4E4E4" stroke-width="1" rx="0" opacity="1"/>
+<text x="735.0" y="2312" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1.4" opacity="1">06</text>
+<text x="781.0" y="2312" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="start" letter-spacing="1.4" opacity="1">sticky swap</text>
+<rect x="735.0" y="2340" width="495.0" height="240" fill="#FFFFFF" stroke="#C9C9C9" stroke-width="1.2" rx="0" opacity="1"/>
+<line x1="982.5" y1="2340" x2="982.5" y2="2580" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" stroke-dasharray="4 4" opacity="1"/>
+<circle cx="863.7" cy="2460.0" r="38" fill="none" stroke="#1A1A1A" stroke-width="1.4"/>
+<rect x="1012.2" y="2366" width="178.2" height="10" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.95"/>
+<rect x="1012.2" y="2382" width="138.60000000000002" height="6" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.475"/>
+<rect x="1012.2" y="2420" width="178.2" height="10" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.4"/>
+<rect x="1012.2" y="2436" width="138.60000000000002" height="6" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.2"/>
+<rect x="1012.2" y="2474" width="178.2" height="10" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.14"/>
+<rect x="1012.2" y="2490" width="138.60000000000002" height="6" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.07"/>
+<line x1="1101.3" y1="2546" x2="1101.3" y2="2572" stroke="#1A1A1A" stroke-width="1.4" stroke-linecap="round" opacity="1"/>
+<path d="M 1101.3 2572 L 1097.630155922464 2563.782199537189 L 1104.969844077536 2563.782199537189 Z" fill="#1A1A1A"/>
+<text x="735.0" y="2610" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">visual pins · blocks crossfade + 24px rise</text>
+<text x="735.0" y="2650" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">use this instead of a three-up card grid. the pinned visual responds to section progress.</text>
+<rect x="1300.0" y="2276" width="555.0" height="430" fill="#FAFAFA" stroke="#E4E4E4" stroke-width="1" rx="0" opacity="1"/>
+<text x="1330.0" y="2312" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1.4" opacity="1">07</text>
+<text x="1376.0" y="2312" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="start" letter-spacing="1.4" opacity="1">magnetic cursor</text>
+<rect x="1330.0" y="2340" width="495.0" height="240" fill="#FFFFFF" stroke="#C9C9C9" stroke-width="1.2" rx="0" opacity="1"/>
+<circle cx="1478.5" cy="2440.8" r="4" fill="#1A1A1A"/>
+<circle cx="1478.5" cy="2440.8" r="19" fill="none" stroke="#8A8A8A" stroke-width="1.2"/>
+<circle cx="1656.7" cy="2488.8" r="4" fill="#1A1A1A"/>
+<circle cx="1656.7" cy="2488.8" r="40" fill="none" stroke="#1A1A1A" stroke-width="1.4"/>
+<rect x="1587.4" y="2472.8" width="148.5" height="32" fill="none" stroke="#1A1A1A" stroke-width="1" rx="0" opacity="1"/>
+<line x1="1508.2" y1="2450.4" x2="1627.0" y2="2484.0" stroke="#8A8A8A" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 3" opacity="1"/>
+<path d="M 1627.0 2484.0 L 1618.0936300696292 2485.2948261131855 L 1620.0911458015444 2478.232181203914 Z" fill="#8A8A8A"/>
+<text x="1330.0" y="2610" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">dot 7px · ring 38 → 76px · blend difference</text>
+<text x="1330.0" y="2626" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">button pulls 0.22× toward pointer</text>
+<text x="1330.0" y="2650" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">ring position lerps at 0.14, dot is exact. fine-pointer only — gate behind (hover:hover).</text>
+<rect x="1895.0" y="2276" width="555.0" height="430" fill="#FAFAFA" stroke="#E4E4E4" stroke-width="1" rx="0" opacity="1"/>
+<text x="1925.0" y="2312" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1.4" opacity="1">08</text>
+<text x="1971.0" y="2312" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="start" letter-spacing="1.4" opacity="1">page curtain</text>
+<rect x="1925.0" y="2340" width="495.0" height="240" fill="#FFFFFF" stroke="#C9C9C9" stroke-width="1.2" rx="0" opacity="1"/>
+<rect x="1925.0" y="2340" width="165.0" height="240" fill="none" stroke="#E4E4E4" stroke-width="1" rx="0" opacity="1"/>
+<rect x="1925.0" y="2580.0" width="165.0" height="0.0" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.88"/>
+<text x="2007.5" y="2598" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#8A8A8A" text-anchor="middle" letter-spacing="0" opacity="1">out</text>
+<rect x="2090.0" y="2340" width="165.0" height="240" fill="none" stroke="#E4E4E4" stroke-width="1" rx="0" opacity="1"/>
+<rect x="2090.0" y="2431.2" width="165.0" height="148.8" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.88"/>
+<text x="2172.5" y="2598" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#8A8A8A" text-anchor="middle" letter-spacing="0" opacity="1">wipe</text>
+<rect x="2255.0" y="2340" width="165.0" height="240" fill="none" stroke="#E4E4E4" stroke-width="1" rx="0" opacity="1"/>
+<rect x="2255.0" y="2340.0" width="165.0" height="240.0" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.88"/>
+<text x="2337.5" y="2598" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#8A8A8A" text-anchor="middle" letter-spacing="0" opacity="1">in</text>
+<line x1="2172.5" y1="2564" x2="2172.5" y2="2362" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" opacity="1"/>
+<path d="M 2172.5 2362 L 2176.1698440775363 2370.217800462811 L 2168.8301559224637 2370.217800462811 Z" fill="#FFFFFF"/>
+<text x="1925.0" y="2610" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">panel wipes up · route swaps behind · exits up</text>
+<text x="1925.0" y="2650" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">1400ms curtain. the outgoing page holds still — never animate both at once.</text>
+<line x1="110" y1="2756" x2="2450" y2="2756" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="butt" opacity="1"/>
+<text x="110" y="2790" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1.8" opacity="1">(05)</text>
+<text x="164" y="2790" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="start" letter-spacing="1.8" opacity="1">COMPOSITION</text>
+<text x="2450" y="2790" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="end" letter-spacing="1.2" opacity="1">static structure the motion sits on</text>
+<rect x="110.0" y="2834" width="555.0" height="400" fill="#FAFAFA" stroke="#E4E4E4" stroke-width="1" rx="0" opacity="1"/>
+<text x="140.0" y="2870" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1.4" opacity="1">01</text>
+<text x="186.0" y="2870" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="start" letter-spacing="1.4" opacity="1">asymmetry</text>
+<rect x="140.0" y="2898" width="495.0" height="250" fill="#FFFFFF" stroke="#C9C9C9" stroke-width="1.2" rx="0" opacity="1"/>
+<line x1="181.25" y1="2898" x2="181.25" y2="3148" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="222.5" y1="2898" x2="222.5" y2="3148" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="263.75" y1="2898" x2="263.75" y2="3148" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="305.0" y1="2898" x2="305.0" y2="3148" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="346.25" y1="2898" x2="346.25" y2="3148" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="387.5" y1="2898" x2="387.5" y2="3148" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="428.75" y1="2898" x2="428.75" y2="3148" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="470.0" y1="2898" x2="470.0" y2="3148" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="511.25" y1="2898" x2="511.25" y2="3148" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="552.5" y1="2898" x2="552.5" y2="3148" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<line x1="593.75" y1="2898" x2="593.75" y2="3148" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<rect x="140.0" y="2928" width="206.25" height="64" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.85"/>
+<rect x="387.5" y="3038" width="247.5" height="50" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.5"/>
+<rect x="428.75" y="3052" width="206.25" height="34" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.28"/>
+<text x="140.0" y="3170" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">content at cols 1–5 or 7–12. centre only for the hero.</text>
+<rect x="705.0" y="2834" width="555.0" height="400" fill="#FAFAFA" stroke="#E4E4E4" stroke-width="1" rx="0" opacity="1"/>
+<text x="735.0" y="2870" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1.4" opacity="1">02</text>
+<text x="781.0" y="2870" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="start" letter-spacing="1.4" opacity="1">container break</text>
+<rect x="735.0" y="2898" width="495.0" height="250" fill="#FFFFFF" stroke="#C9C9C9" stroke-width="1.2" rx="0" opacity="1"/>
+<rect x="794.4" y="2898" width="376.2" height="250" fill="none" stroke="#C9C9C9" stroke-width="1" rx="0" stroke-dasharray="4 4" opacity="1"/>
+<rect x="705.0" y="2973.0" width="555.0" height="58" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.85"/>
+<text x="800.4" y="2914" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">container</text>
+<text x="735.0" y="3170" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">mega type and media exceed the container and clip at the viewport edge.</text>
+<rect x="1300.0" y="2834" width="555.0" height="400" fill="#FAFAFA" stroke="#E4E4E4" stroke-width="1" rx="0" opacity="1"/>
+<text x="1330.0" y="2870" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1.4" opacity="1">03</text>
+<text x="1376.0" y="2870" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="start" letter-spacing="1.4" opacity="1">live frame edges</text>
+<rect x="1330.0" y="2898" width="495.0" height="250" fill="#FFFFFF" stroke="#C9C9C9" stroke-width="1.2" rx="0" opacity="1"/>
+<rect x="1352.0" y="2920" width="451.0" height="206" fill="none" stroke="#C9C9C9" stroke-width="1" rx="0" stroke-dasharray="3 4" opacity="1"/>
+<rect x="1352.0" y="2920" width="58" height="9" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="1"/>
+<rect x="1729.0" y="2920" width="74" height="9" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.6"/>
+<rect x="1352.0" y="3117" width="96" height="9" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.45"/>
+<rect x="1751.0" y="3117" width="52" height="9" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.75"/>
+<rect x="1793.0" y="2988.0" width="10" height="70.0" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.3"/>
+<text x="1330.0" y="3154" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">wordmark · nav · micro-label triplet · live scroll % · rotated side tab</text>
+<text x="1330.0" y="3176" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">cheap to build, and the fastest signal a human art-directed the page.</text>
+<rect x="1895.0" y="2834" width="555.0" height="400" fill="#FAFAFA" stroke="#E4E4E4" stroke-width="1" rx="0" opacity="1"/>
+<text x="1925.0" y="2870" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1.4" opacity="1">04</text>
+<text x="1971.0" y="2870" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="start" letter-spacing="1.4" opacity="1">layering</text>
+<rect x="1925.0" y="2898" width="495.0" height="250" fill="#FFFFFF" stroke="#C9C9C9" stroke-width="1.2" rx="0" opacity="1"/>
+<rect x="1941.0" y="2983.0" width="463.0" height="62" fill="#1A1A1A" stroke="none" stroke-width="0" rx="0" opacity="0.85"/>
+<ellipse cx="2202.2" cy="2998.0" rx="74.25" ry="75.0" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.6"/>
+<text x="2202.2" y="3093.0" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#8A8A8A" text-anchor="middle" letter-spacing="0" opacity="1">cutout above type</text>
+<text x="1925.0" y="3154" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">product cutouts overlap the headline — above the type, below the nav.</text>
+<text x="1925.0" y="3176" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">nothing else does as much for perceived quality.</text>
+<line x1="110" y1="3284" x2="2450" y2="3284" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="butt" opacity="1"/>
+<text x="110" y="3318" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="1.8" opacity="1">(06)</text>
+<text x="164" y="3318" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="500" fill="#1A1A1A" text-anchor="start" letter-spacing="1.8" opacity="1">BUDGET &amp; FALLBACK</text>
+<text x="2450" y="3318" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#8A8A8A" text-anchor="end" letter-spacing="1.2" opacity="1">non-negotiable</text>
+<text x="110" y="3382" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="500" fill="#1A1A1A" text-anchor="start" letter-spacing="1.2" opacity="1">animate only</text>
+<text x="410" y="3382" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">transform · opacity · clip-path · filter. never width, height, top, left, or margin.</text>
+<line x1="110" y1="3396" x2="2450" y2="3396" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<text x="110" y="3428" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="500" fill="#1A1A1A" text-anchor="start" letter-spacing="1.2" opacity="1">three properties</text>
+<text x="410" y="3428" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">maximum per element. more than that and the intent stops reading.</text>
+<line x1="110" y1="3442" x2="2450" y2="3442" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<text x="110" y="3474" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="500" fill="#1A1A1A" text-anchor="start" letter-spacing="1.2" opacity="1">one loop</text>
+<text x="410" y="3474" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">all scroll-linked work through a single rAF, lerp 0.12. pin with native position:sticky.</text>
+<line x1="110" y1="3488" x2="2450" y2="3488" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<text x="110" y="3520" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="500" fill="#1A1A1A" text-anchor="start" letter-spacing="1.2" opacity="1">split after fonts</text>
+<text x="410" y="3520" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">measure line breaks only once document.fonts.ready resolves, or masks won't match the wrap.</text>
+<line x1="110" y1="3534" x2="2450" y2="3534" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<text x="110" y="3566" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="500" fill="#1A1A1A" text-anchor="start" letter-spacing="1.2" opacity="1">reduced motion</text>
+<text x="410" y="3566" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">every scrubbed sequence resolves to its finished state — never left invisible, never jump-cut.</text>
+<line x1="110" y1="3580" x2="2450" y2="3580" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+<text x="110" y="3612" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="500" fill="#1A1A1A" text-anchor="start" letter-spacing="1.2" opacity="1">reserve space</text>
+<text x="410" y="3612" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#8A8A8A" text-anchor="start" letter-spacing="0" opacity="1">lock every media aspect-ratio before load. CLS under 0.05.</text>
+<line x1="110" y1="3626" x2="2450" y2="3626" stroke="#E4E4E4" stroke-width="1" stroke-linecap="butt" opacity="1"/>
+</svg>
