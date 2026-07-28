@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="maison">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MERIDIAN — Maison Horlogère</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════════════════
+   MERIDIAN — tokens
+   ═══════════════════════════════════════════════════════════ */
+:root{
+  --bg:#F2EDE4; --bg-alt:#E9E2D6; --bg-deep:#12100D;
+  --fg:#1A1713; --fg-muted:#6B6459; --fg-faint:#A8A093;
+  --accent:#B98C52; --sand:#C9A87C;
+  --rule:rgba(26,23,19,.13);
+
+  --f-display:"Cormorant Garamond","Didot","Bodoni MT",Georgia,serif;
+  --f-sans:"Inter","Neue Haas Grotesk Display",system-ui,-apple-system,sans-serif;
+  --f-mono:"JetBrains Mono","Söhne Mono",ui-monospace,monospace;
+
+  --t-mega:clamp(4.5rem,1.5rem+13vw,15rem);
+  --t-h1:clamp(3.25rem,1.6rem+7vw,9.5rem);
+  --t-h2:clamp(2.25rem,1.3rem+4.2vw,5.25rem);
+  --t-h3:clamp(1.5rem,1.1rem+1.7vw,2.6rem);
+  --t-lead:clamp(1.0625rem,.95rem+.5vw,1.4rem);
+  --t-body:clamp(.9375rem,.9rem+.2vw,1.0625rem);
+  --t-micro:.75rem; --t-mono:.6875rem;
+
+  --tr-mega:-.045em; --tr-h1:-.035em; --tr-h2:-.02em; --tr-caps:.2em; --tr-mono:.09em;
+
+  --gutter:clamp(1.25rem,.6rem+2.6vw,3.5rem);
+  --section-y:clamp(6rem,3rem+10vw,14rem);
+  --container:88rem;
+  --measure:36ch;
+
+  --e-reveal:cubic-bezier(.16,1,.3,1);
+  --e-curtain:cubic-bezier(.83,0,.17,1);
+  --e-ui:cubic-bezier(.25,1,.5,1);
+  --d-fast:240ms; --d-base:480ms; --d-slow:900ms; --d-epic:1400ms;
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;scroll-behavior:auto}
+body{
+  background:var(--bg); color:var(--fg);
+  font-family:var(--f-sans); font-size:var(--t-body); font-weight:300; line-height:1.6;
+  overflow-x:clip;
+}
+::selection{background:var(--fg);color:var(--bg)}
+img,canvas,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+
+/* ── type utilities ── */
+.caps{font-size:var(--t-micro);text-transform:uppercase;letter-spacing:var(--tr-caps);font-weight:400;line-height:1.3}
+.mono{font-family:var(--f-mono);font-size:var(--t-mono);text-transform:uppercase;letter-spacing:var(--tr-mono);color:var(--fg-faint);line-height:1.4}
+h1,h2,h3{font-family:var(--f-display);font-weight:300}
+h1{font-size:var(--t-h1);line-height:.94;letter-spacing:var(--tr-h1)}
+h2{font-size:var(--t-h2);line-height:1;letter-spacing:var(--tr-h2)}
+h3{font-size:var(--t-h3);line-height:1.14;letter-spacing:-.01em}
+.it{font-style:italic}
+p{max-width:var(--measure);color:var(--fg-muted)}
+
+.wrap{max-width:var(--container);margin-inline:auto;padding-inline:var(--gutter)}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(1rem,.5rem+1.6vw,2rem)}
+
+/* ═══ PRELOADER ═══ */
+#preload{position:fixed;inset:0;z-index:1000;background:var(--bg);display:flex;align-items:flex-end;justify-content:space-between;padding:var(--gutter)}
+#preload.done{transform:translateY(-101%);transition:transform var(--d-epic) var(--e-curtain)}
+#pl-word{font-family:var(--f-display);font-size:clamp(2.5rem,1rem+6vw,6rem);line-height:1;letter-spacing:-.03em;overflow:hidden}
+#pl-word span{display:block;transform:translateY(102%);animation:plIn 1s var(--e-reveal) .15s forwards}
+@keyframes plIn{to{transform:translateY(0)}}
+#pl-num{font-family:var(--f-mono);font-size:clamp(2.5rem,1rem+6vw,6rem);font-variant-numeric:tabular-nums;letter-spacing:-.03em;line-height:1}
+#pl-bar{position:absolute;left:0;bottom:0;height:1px;background:var(--fg);width:0}
+
+/* ═══ FIXED CHROME ═══ */
+.fixed-ui{position:fixed;z-index:100;pointer-events:none}
+#nav{top:0;left:0;right:0;display:flex;align-items:center;justify-content:space-between;
+  padding:clamp(1.1rem,.8rem+1vw,1.75rem) var(--gutter);mix-blend-mode:difference;color:#fff;
+  transition:transform var(--d-base) var(--e-ui)}
+#nav.hide{transform:translateY(-110%)}
+#nav a,#nav button{pointer-events:auto}
+.brand{font-family:var(--f-display);font-size:1.05rem;letter-spacing:.34em;text-transform:uppercase;font-weight:400}
+.nav-links{display:flex;gap:clamp(1.25rem,.5rem+2vw,2.75rem)}
+.nav-links a{position:relative;overflow:hidden;display:block;height:1.2em}
+.nav-links a span{display:block;transition:transform var(--d-fast) var(--e-reveal)}
+.nav-links a span+span{position:absolute;inset:0;transform:translateY(105%)}
+.nav-links a:hover span{transform:translateY(-105%)}
+.nav-links a:hover span+span{transform:translateY(0)}
+@media(max-width:780px){.nav-links{display:none}}
+
+#edge-l{left:var(--gutter);bottom:var(--gutter)}
+#edge-r{right:var(--gutter);bottom:var(--gutter);text-align:right;display:flex;align-items:center;gap:.75rem}
+#prog-track{width:clamp(60px,8vw,120px);height:1px;background:var(--rule);position:relative}
+#prog-fill{position:absolute;inset:0;background:var(--fg);transform-origin:left;transform:scaleX(0)}
+#prog-num{font-variant-numeric:tabular-nums}
+@media(max-width:640px){#edge-l{display:none}}
+
+#side-tab{right:0;top:50%;transform:translateY(-50%) rotate(180deg);writing-mode:vertical-rl;
+  padding:1.75rem .9rem;pointer-events:auto;border-left:1px solid var(--rule)}
+#side-tab a{display:block;position:relative}
+#side-tab a::after{content:"";position:absolute;left:-.35rem;top:0;bottom:0;width:1px;background:var(--fg);transform:scaleY(0);transform-origin:top;transition:transform var(--d-fast) var(--e-ui)}
+#side-tab a:hover::after{transform:scaleY(1)}
+@media(max-width:980px){#side-tab{display:none}}
+
+/* grain */
+#grain{position:fixed;inset:-50%;z-index:90;pointer-events:none;opacity:.05;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation:grainShift 8s steps(6) infinite}
+@keyframes grainShift{0%{transform:translate(0,0)}20%{transform:translate(-3%,2%)}40%{transform:translate(2%,-3%)}60%{transform:translate(-2%,-2%)}80%{transform:translate(3%,1%)}100%{transform:translate(0,0)}}
+
+/* cursor */
+#cur,#cur-r{position:fixed;top:0;left:0;z-index:900;pointer-events:none;border-radius:50%;mix-blend-mode:difference}
+#cur{width:7px;height:7px;background:#fff;margin:-3.5px 0 0 -3.5px}
+#cur-r{width:38px;height:38px;border:1px solid #fff;margin:-19px 0 0 -19px;transition:width var(--d-fast) var(--e-ui),height var(--d-fast) var(--e-ui),margin var(--d-fast) var(--e-ui),opacity var(--d-fast)}
+#cur-r.on{width:76px;height:76px;margin:-38px 0 0 -38px}
+@media(hover:none),(pointer:coarse){#cur,#cur-r{display:none}}
+
+/* ═══ REVEALS ═══ */
+.line{overflow:hidden;display:block}
+.line>i{display:block;font-style:inherit;transform:translateY(110%);transition:transform var(--d-slow) var(--e-reveal)}
+.rv.in .line>i{transform:translateY(0)}
+.fade{opacity:0;transform:translateY(18px);transition:opacity var(--d-slow) var(--e-reveal),transform var(--d-slow) var(--e-reveal)}
+.rv.in .fade,.fade.in{opacity:1;transform:none}
+.wipe{clip-path:inset(0 0 100% 0);transition:clip-path var(--d-epic) var(--e-curtain)}
+.rv.in .wipe,.wipe.in{clip-path:inset(0 0 0 0)}
+
+/* ═══ HERO ═══ */
+#hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+#flow{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+#hero .wrap{position:relative;z-index:2;width:100%}
+.hero-eyebrow{display:flex;gap:1.25rem;align-items:center;color:var(--fg-muted);margin-bottom:clamp(1.5rem,1rem+2vw,3rem)}
+.hero-eyebrow .dash{width:clamp(28px,4vw,64px);height:1px;background:var(--fg-faint)}
+#hero h1{max-width:16ch}
+.hero-foot{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;margin-top:clamp(2.5rem,2rem+3vw,5rem);flex-wrap:wrap}
+.scroll-cue{display:flex;align-items:center;gap:.7rem;color:var(--fg-muted)}
+.scroll-cue .bar{width:1px;height:44px;background:var(--rule);position:relative;overflow:hidden}
+.scroll-cue .bar::after{content:"";position:absolute;inset:0;background:var(--fg);animation:cue 2.2s var(--e-curtain) infinite}
+@keyframes cue{0%{transform:translateY(-100%)}55%,100%{transform:translateY(100%)}}
+
+/* ═══ SCRUB / PINNED MOVEMENT ═══ */
+#movement{position:relative;height:400vh;background:var(--bg)}
+.pin{position:sticky;top:0;height:100svh;overflow:hidden;display:grid;place-items:center}
+#dial{width:min(58vmin,520px);aspect-ratio:1;position:relative;margin-top:-4vh}
+#dial svg{width:100%;height:100%;overflow:visible}
+.dial-caps{position:absolute;left:0;right:0;bottom:calc(var(--gutter) + 3.25rem);
+  display:grid;place-items:center;text-align:center;padding-inline:var(--gutter)}
+.dial-cap{grid-area:1/1;width:min(92vw,32ch);opacity:0;transform:translateY(10px);
+  transition:opacity var(--d-base) linear,transform var(--d-base) var(--e-reveal)}
+.dial-cap.on{opacity:1;transform:none}
+.mv-index{position:absolute;top:calc(var(--gutter) + 4.5rem);left:var(--gutter)}
+.mv-count{position:absolute;bottom:var(--gutter);left:50%;transform:translateX(-50%);font-variant-numeric:tabular-nums}
+
+/* ═══ MARQUEE ═══ */
+#creed{position:relative;height:320vh;background:var(--bg-alt)}
+#creed .pin{place-items:stretch}
+.mq-stage{position:relative;height:100%;display:flex;flex-direction:column;justify-content:center;gap:clamp(1rem,2vw,2.5rem)}
+.mq{display:flex;white-space:nowrap;will-change:transform}
+.mq span{font-family:var(--f-display);font-size:var(--t-mega);line-height:.86;letter-spacing:var(--tr-mega);padding-right:.28em}
+.mq.ghost span{color:transparent;-webkit-text-stroke:1px var(--fg-faint);font-style:italic}
+.mq-note{position:absolute;right:var(--gutter);bottom:var(--gutter);text-align:right}
+
+/* ═══ FACETS (sticky swap) ═══ */
+#facets{position:relative;background:var(--bg)}
+.facet-rail{position:relative}
+.facet-vis{position:sticky;top:0;height:100svh;display:grid;place-items:center;overflow:hidden}
+#orbit{width:min(62vmin,560px);aspect-ratio:1}
+.facet-list{position:relative;margin-top:-100svh;pointer-events:none}
+.facet{min-height:100svh;display:flex;align-items:center}
+.facet-inner{grid-column:8/13;pointer-events:auto}
+@media(max-width:900px){.facet-inner{grid-column:1/13}}
+.facet .num{color:var(--fg-faint);margin-bottom:1rem}
+.facet h3{margin-bottom:1rem}
+
+/* ═══ INVERTED STATEMENT ═══ */
+#statement{background:var(--bg-deep);color:#F5F1E9;padding-block:calc(var(--section-y)*1.15);position:relative;overflow:hidden}
+#statement p{color:rgba(245,241,233,.6)}
+#statement .rule{height:1px;background:rgba(245,241,233,.18);margin-block:clamp(2.5rem,4vw,4.5rem)}
+.st-quote{font-family:var(--f-display);font-size:clamp(1.9rem,1.1rem+3.4vw,4.2rem);line-height:1.08;letter-spacing:-.02em;font-weight:300;max-width:18ch}
+.st-meta{display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap}
+.st-meta .mono{color:rgba(245,241,233,.45)}
+
+/* ═══ EDITORIAL ═══ */
+#atelier{padding-block:var(--section-y)}
+.sec-head{display:flex;justify-content:space-between;align-items:baseline;gap:2rem;padding-bottom:1.5rem;border-bottom:1px solid var(--rule);margin-bottom:clamp(3rem,2rem+4vw,6rem)}
+.ed{align-items:center;row-gap:clamp(3rem,5vw,6rem)}
+.ed-media{position:relative;aspect-ratio:4/5;background:var(--bg-alt);overflow:hidden}
+.ed-media canvas{width:100%;height:100%}
+.ed-media .tag{position:absolute;left:1rem;bottom:1rem}
+.ed-copy .caps{color:var(--fg-faint);margin-bottom:1.25rem}
+.ed-copy h3{margin-bottom:1.25rem;max-width:14ch}
+.spec{margin-top:2.5rem;border-top:1px solid var(--rule)}
+.spec div{display:flex;justify-content:space-between;gap:1rem;padding:.85rem 0;border-bottom:1px solid var(--rule)}
+
+/* ═══ BUTTON ═══ */
+.btn{display:inline-block;position:relative;overflow:hidden;border:1px solid var(--fg);
+  padding:1rem 2.25rem;background:none;cursor:pointer;color:var(--fg);font:inherit;isolation:isolate}
+.btn::before{content:"";position:absolute;inset:0;background:var(--fg);transform:translateY(101%);transition:transform var(--d-base) var(--e-curtain);z-index:-1}
+.btn:hover::before{transform:translateY(0)}
+.btn span{transition:color var(--d-base) var(--e-curtain)}
+.btn:hover span{color:var(--bg)}
+
+/* ═══ FOOTER ═══ */
+footer{background:var(--bg);padding-top:var(--section-y);overflow:clip}
+.f-top{display:flex;justify-content:space-between;gap:3rem;flex-wrap:wrap;padding-bottom:clamp(4rem,6vw,8rem)}
+.f-cols{display:flex;gap:clamp(2.5rem,5vw,7rem);flex-wrap:wrap}
+.f-cols ul{list-style:none;display:grid;gap:.6rem}
+.f-cols h4{margin-bottom:1.25rem;color:var(--fg-faint)}
+.f-cols a{position:relative}
+.f-cols a::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:1px;background:var(--fg);transform:scaleX(0);transform-origin:right;transition:transform var(--d-fast) var(--e-ui)}
+.f-cols a:hover::after{transform:scaleX(1);transform-origin:left}
+.f-word{font-family:var(--f-display);font-size:clamp(4rem,.5rem+19vw,22rem);line-height:.78;letter-spacing:-.05em;
+  text-align:center;white-space:nowrap;margin-bottom:-.16em;user-select:none}
+.f-legal{display:flex;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;padding-block:1.5rem;border-top:1px solid var(--rule)}
+
+/* ═══ A11Y ═══ */
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:1ms!important;animation-iteration-count:1!important;transition-duration:1ms!important}
+  .line>i{transform:none!important}.fade{opacity:1!important;transform:none!important}.wipe{clip-path:none!important}
+  #movement{height:auto}#creed{height:auto}.pin{position:static;height:auto;padding-block:var(--section-y)}
+  .facet-list{margin-top:0}.facet{min-height:auto;padding-block:3rem}.facet-vis{position:static;height:60vh}
+  .dial-caps,.mv-count,.mv-index{position:static;margin-top:2rem;transform:none}
+  #dial{margin:0 auto}.mq{white-space:normal;flex-wrap:wrap}
+}
+</style>
+</head>
+<body>
+
+<!-- ══ PRELOADER ══ -->
+<div id="preload">
+  <div id="pl-word"><span>Meridian</span></div>
+  <div id="pl-num">00</div>
+  <div id="pl-bar"></div>
+</div>
+
+<!-- ══ FIXED CHROME ══ -->
+<header id="nav" class="fixed-ui">
+  <a href="#" class="brand">Meridian</a>
+  <nav class="nav-links caps" aria-label="Primary">
+    <a href="#movement"><span>Movement</span><span aria-hidden="true">Movement</span></a>
+    <a href="#facets"><span>Craft</span><span aria-hidden="true">Craft</span></a>
+    <a href="#atelier"><span>Atelier</span><span aria-hidden="true">Atelier</span></a>
+    <a href="#contact"><span>Contact</span><span aria-hidden="true">Contact</span></a>
+  </nav>
+</header>
+
+<div id="edge-l" class="fixed-ui mono">Geneva &nbsp;·&nbsp; Est. 1874 &nbsp;·&nbsp; Hand-finished</div>
+<div id="edge-r" class="fixed-ui mono">
+  <div id="prog-track"><div id="prog-fill"></div></div>
+  <span id="prog-num">000</span>
+</div>
+<div id="side-tab" class="fixed-ui caps"><a href="#contact">Request an appointment</a></div>
+<div id="grain" aria-hidden="true"></div>
+<div id="cur" aria-hidden="true"></div>
+<div id="cur-r" aria-hidden="true"></div>
+
+<main>
+
+<!-- ══ HERO ══ -->
+<section id="hero">
+  <canvas id="flow" aria-hidden="true"></canvas>
+  <div class="wrap rv">
+    <div class="hero-eyebrow caps fade"><span class="dash"></span>Maison Horlogère — Calibre 07</div>
+    <h1 data-split>Time, drawn slowly <span class="it">through the hand.</span></h1>
+    <div class="hero-foot">
+      <p class="fade" style="transition-delay:.35s">A movement of four hundred and eleven components, assembled
+        across nine months by a single watchmaker who signs the bridge when it is finished.</p>
+      <div class="scroll-cue mono fade" style="transition-delay:.5s"><span class="bar"></span>Scroll</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PINNED SCRUB ══ -->
+<section id="movement">
+  <div class="pin">
+    <div class="mv-index mono">(01) — The Movement</div>
+
+    <div id="dial">
+      <svg viewBox="0 0 400 400" aria-hidden="true">
+        <defs>
+          <linearGradient id="gsand" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#C9A87C"/><stop offset="1" stop-color="#8E6B3E"/>
+          </linearGradient>
+        </defs>
+        <!-- outer case -->
+        <circle id="ring-out" cx="200" cy="200" r="176" fill="none" stroke="var(--fg)" stroke-width=".8"
+                stroke-dasharray="1106" stroke-dashoffset="1106"/>
+        <circle id="ring-mid" cx="200" cy="200" r="140" fill="none" stroke="var(--fg-faint)" stroke-width=".6"
+                stroke-dasharray="880" stroke-dashoffset="880"/>
+        <circle id="ring-in" cx="200" cy="200" r="96" fill="none" stroke="url(#gsand)" stroke-width="1.4"
+                stroke-dasharray="604" stroke-dashoffset="604"/>
+        <!-- indices -->
+        <g id="indices" stroke="var(--fg)" stroke-width=".9"></g>
+        <!-- balance wheel spokes -->
+        <g id="spokes" stroke="var(--sand)" stroke-width=".7" opacity="0"></g>
+        <!-- hands -->
+        <g id="hands" opacity="0">
+          <line id="h-hour" x1="200" y1="200" x2="200" y2="118" stroke="var(--fg)" stroke-width="2.4" stroke-linecap="round"/>
+          <line id="h-min"  x1="200" y1="200" x2="200" y2="76"  stroke="var(--fg)" stroke-width="1.4" stroke-linecap="round"/>
+          <line id="h-sec"  x1="200" y1="212" x2="200" y2="64"  stroke="var(--accent)" stroke-width=".7" stroke-linecap="round"/>
+          <circle cx="200" cy="200" r="3.4" fill="var(--fg)"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="dial-caps">
+      <div class="dial-cap">
+        <div class="caps" style="color:var(--fg-faint);margin-bottom:.9rem">Step one</div>
+        <h3>The case is turned from a single billet</h3>
+      </div>
+      <div class="dial-cap">
+        <div class="caps" style="color:var(--fg-faint);margin-bottom:.9rem">Step two</div>
+        <h3>Indices are set by eye, never by jig</h3>
+      </div>
+      <div class="dial-cap">
+        <div class="caps" style="color:var(--fg-faint);margin-bottom:.9rem">Step three</div>
+        <h3>The balance breathes at 21,600 vibrations</h3>
+      </div>
+      <div class="dial-cap">
+        <div class="caps" style="color:var(--fg-faint);margin-bottom:.9rem">Complete</div>
+        <h3>Calibre 07 &nbsp;·&nbsp; 72-hour reserve</h3>
+      </div>
+    </div>
+
+    <div class="mv-count mono"><span id="mv-pct">000</span> / 100</div>
+  </div>
+</section>
+
+<!-- ══ MARQUEE ══ -->
+<section id="creed">
+  <div class="pin">
+    <div class="mq-stage">
+      <div class="mq" data-mq="1"><span>Precision</span><span>Patience</span><span>Permanence</span><span>Precision</span><span>Patience</span><span>Permanence</span></div>
+      <div class="mq ghost" data-mq="-0.85"><span>an object made to outlive its owner</span><span>an object made to outlive its owner</span></div>
+      <div class="mq" data-mq="0.55" style="opacity:.28"><span>Geneva</span><span>MMXXVI</span><span>Geneva</span><span>MMXXVI</span><span>Geneva</span><span>MMXXVI</span></div>
+    </div>
+    <div class="mq-note mono">(02) — The Creed</div>
+  </div>
+</section>
+
+<!-- ══ FACETS ══ -->
+<section id="facets">
+  <div class="facet-rail">
+    <div class="facet-vis">
+      <canvas id="orbit" aria-hidden="true"></canvas>
+    </div>
+    <div class="facet-list wrap">
+      <article class="facet grid rv"><div class="facet-inner">
+        <div class="num mono">(01) — Escapement</div>
+        <h3 data-split>A free-sprung balance, adjusted in six positions.</h3>
+        <p class="fade">No index regulator. Rate is corrected by four gold weights on the rim, moved a
+          fraction of a degree at a time until the deviation falls under two seconds a day.</p>
+      </div></article>
+      <article class="facet grid rv"><div class="facet-inner">
+        <div class="num mono">(02) — Finishing</div>
+        <h3 data-split>Anglage cut by hand, at forty-five degrees.</h3>
+        <p class="fade">Every bridge edge is chamfered and polished against tin and diamond paste. Eleven hours
+          of work that only reveals itself when the light moves across it.</p>
+      </div></article>
+      <article class="facet grid rv"><div class="facet-inner">
+        <div class="num mono">(03) — Reserve</div>
+        <h3 data-split>Seventy-two hours, from one barrel.</h3>
+        <p class="fade">A single mainspring, wound slowly, holds three days of tension — set down on Friday,
+          it is still keeping time on Monday morning.</p>
+      </div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ══ STATEMENT ══ -->
+<section id="statement">
+  <div class="wrap rv">
+    <div class="mono fade" style="color:rgba(245,241,233,.45)">(03) — Position</div>
+    <div class="rule"></div>
+    <blockquote class="st-quote" data-split>We do not make watches quickly. We make roughly two hundred a year, and we are told this is a problem.</blockquote>
+    <div class="rule"></div>
+    <div class="st-meta">
+      <p class="fade">Every calibre leaves the atelier with the name of the watchmaker who assembled it engraved
+        on the underside of the balance cock. If it ever returns, it returns to them.</p>
+      <div class="mono fade">Élise Roubaud &nbsp;—&nbsp; Head of Atelier</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ EDITORIAL ══ -->
+<section id="atelier">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2 data-split>The Atelier</h2>
+      <div class="mono fade">(04) — Rue du Rhône, Geneva</div>
+    </div>
+
+    <div class="grid ed">
+      <div class="ed-media wipe rv" style="grid-column:1/6">
+        <canvas class="cv-noise" data-seed="3" aria-hidden="true"></canvas>
+        <div class="tag mono" style="color:var(--fg)">Fig. i — Balance bridge</div>
+      </div>
+      <div class="ed-copy rv" style="grid-column:7/12">
+        <div class="caps fade">Nine months, one pair of hands</div>
+        <h3 data-split>A watchmaker is given one movement and no deadline.</h3>
+        <p class="fade">They are not permitted to work on a second until the first is regulated, cased, and
+          worn for thirty days. It is an inefficient way to run a workshop, and the only way we have found
+          to make something worth keeping.</p>
+        <div class="spec mono fade">
+          <div><span>Calibre</span><span>07 — manual wind</span></div>
+          <div><span>Frequency</span><span>21,600 vph</span></div>
+          <div><span>Components</span><span>411</span></div>
+          <div><span>Annual output</span><span>≈ 200 pieces</span></div>
+        </div>
+        <div class="fade" style="margin-top:2.5rem">
+          <a href="#contact" class="btn caps"><span>Request an appointment</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ══ FOOTER ══ -->
+<footer id="contact">
+  <div class="wrap">
+    <div class="f-top rv">
+      <div>
+        <div class="mono fade" style="margin-bottom:1.25rem">(05) — Enquiries</div>
+        <h2 data-split>By appointment only.</h2>
+      </div>
+      <div class="f-cols caps">
+        <div class="fade"><h4 class="mono">Maison</h4><ul><li><a href="#">Collection</a></li><li><a href="#">Calibres</a></li><li><a href="#">Heritage</a></li></ul></div>
+        <div class="fade" style="transition-delay:.08s"><h4 class="mono">Service</h4><ul><li><a href="#">Restoration</a></li><li><a href="#">Certification</a></li><li><a href="#">Care</a></li></ul></div>
+        <div class="fade" style="transition-delay:.16s"><h4 class="mono">Contact</h4><ul><li><a href="#">Geneva</a></li><li><a href="#">Tokyo</a></li><li><a href="#">New York</a></li></ul></div>
+      </div>
+    </div>
+  </div>
+  <div class="f-word" data-par="-.08">MERIDIAN</div>
+  <div class="wrap"><div class="f-legal mono">
+    <span>© MMXXVI Meridian SA</span><span>Rue du Rhône 41, 1204 Genève</span><span>Legal · Privacy</span>
+  </div></div>
+</footer>
+
+<script>
+(() => {
+"use strict";
+const RM = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const FINE = matchMedia("(hover:hover) and (pointer:fine)").matches;
+const lerp = (a,b,t) => a+(b-a)*t;
+const clamp = (v,a=0,b=1) => Math.min(b,Math.max(a,v));
+const $ = (s,c=document) => c.querySelector(s);
+const $$ = (s,c=document) => [...c.querySelectorAll(s)];
+
+/* ─────────────────────────────────────────────
+   1. TEXT SPLITTING — words → measured lines → masks
+   ───────────────────────────────────────────── */
+function split(el){
+  // keep the pristine markup so we can re-split when the viewport width changes
+  if(!el.dataset.orig) el.dataset.orig = el.innerHTML;
+  else el.innerHTML = el.dataset.orig;
+  const html = el.dataset.orig;
+  el.setAttribute("aria-label", el.textContent.trim());
+  // wrap every word (preserving inline tags at word granularity)
+  const tmp = document.createElement("div");
+  tmp.innerHTML = html;
+  const words = [];
+  const walk = (node, styleTag) => {
+    [...node.childNodes].forEach(n => {
+      if(n.nodeType === 3){
+        n.textContent.split(/(\s+)/).forEach(t => {
+          if(!t.trim()) return;
+          words.push({text:t, tag:styleTag});
+        });
+      } else if(n.nodeType === 1){
+        walk(n, n.className || styleTag);
+      }
+    });
+  };
+  walk(tmp, "");
+  el.innerHTML = "";
+  const spans = words.map(w => {
+    const s = document.createElement("span");
+    s.textContent = w.text + " ";
+    s.style.display = "inline-block";
+    // inline-block trims its own trailing space — `pre` keeps the word gap intact
+    s.style.whiteSpace = "pre";
+    if(w.tag) s.className = w.tag;
+    el.appendChild(s);
+    return s;
+  });
+  // group by vertical offset → lines
+  const lines = [];
+  let last = null;
+  spans.forEach(s => {
+    const top = Math.round(s.offsetTop);
+    if(last === null || Math.abs(top-last) > 4){ lines.push([]); last = top; }
+    lines[lines.length-1].push(s);
+  });
+  el.innerHTML = "";
+  lines.forEach((ln,i) => {
+    const mask = document.createElement("span");
+    mask.className = "line";
+    const inner = document.createElement("i");
+    inner.style.transitionDelay = (i*0.09)+"s";
+    ln.forEach(s => inner.appendChild(s));
+    mask.appendChild(inner);
+    el.appendChild(mask);
+  });
+}
+const doSplit = () => $$("[data-split]").forEach(split);
+
+/* ─────────────────────────────────────────────
+   2. REVEAL OBSERVER
+   ───────────────────────────────────────────── */
+function observe(){
+  const io = new IntersectionObserver((es) => {
+    es.forEach(e => { if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } });
+  }, {rootMargin:"0px 0px -12% 0px", threshold:0.15});
+  // observe every .rv group, plus any orphan .fade/.wipe with no .rv ancestor
+  $$(".rv, .fade, .wipe").forEach(el => {
+    if(el.classList.contains("rv") || !el.parentElement.closest(".rv")) io.observe(el);
+  });
+}
+
+/* ─────────────────────────────────────────────
+   3. HERO FLOW FIELD — generative sand/silk strokes
+   ───────────────────────────────────────────── */
+function flowField(){
+  const cv = $("#flow"); if(!cv) return;
+  const ctx = cv.getContext("2d", {alpha:true});
+  let W=0,H=0,DPR=1,parts=[],t=0,raf=null;
+
+  const h2 = (x,y) => { const n = Math.sin(x*127.1 + y*311.7)*43758.5453; return n - Math.floor(n); };
+  const noise = (x,y) => {
+    const xi=Math.floor(x), yi=Math.floor(y), xf=x-xi, yf=y-yi;
+    const u=xf*xf*(3-2*xf), v=yf*yf*(3-2*yf);
+    return lerp(lerp(h2(xi,yi),h2(xi+1,yi),u), lerp(h2(xi,yi+1),h2(xi+1,yi+1),u), v);
+  };
+
+  function size(){
+    DPR = Math.min(devicePixelRatio||1, 2);
+    W = cv.clientWidth; H = cv.clientHeight;
+    cv.width = W*DPR; cv.height = H*DPR;
+    ctx.setTransform(DPR,0,0,DPR,0,0);
+    ctx.clearRect(0,0,W,H);
+    seed();
+  }
+  function seed(){
+    const n = Math.round(clamp(W*H/9000, 120, 620));
+    parts = Array.from({length:n}, () => ({
+      x: Math.random()*W, y: Math.random()*H,
+      life: Math.random()*260, max: 180+Math.random()*260,
+      w: 0.25+Math.random()*0.8
+    }));
+  }
+  function frame(){
+    t += 0.0012;
+    // gentle atmospheric wash so strokes accumulate then recede
+    ctx.fillStyle = "rgba(242,237,228,0.018)";
+    ctx.fillRect(0,0,W,H);
+    for(const p of parts){
+      const a = noise(p.x*0.0016, p.y*0.0016 + t) * Math.PI * 3.4;
+      const nx = p.x + Math.cos(a)*1.5;
+      const ny = p.y + Math.sin(a)*1.5 - 0.14;
+      const fade = clamp(1 - p.life/p.max);
+      ctx.strokeStyle = `rgba(150,116,72,${0.05*fade})`;
+      ctx.lineWidth = p.w;
+      ctx.beginPath(); ctx.moveTo(p.x,p.y); ctx.lineTo(nx,ny); ctx.stroke();
+      p.x = nx; p.y = ny; p.life++;
+      if(p.life > p.max || p.x<-40 || p.x>W+40 || p.y<-40 || p.y>H+40){
+        p.x = Math.random()*W; p.y = H*0.15 + Math.random()*H*0.85;
+        p.life = 0; p.max = 180+Math.random()*260;
+      }
+    }
+    raf = requestAnimationFrame(frame);
+  }
+  size();
+  addEventListener("resize", size, {passive:true});
+  if(RM){ // static single pass
+    for(let i=0;i<420;i++) frameStep();
+    function frameStep(){ t+=0.0012; for(const p of parts){
+      const a=noise(p.x*0.0016,p.y*0.0016+t)*Math.PI*3.4;
+      const nx=p.x+Math.cos(a)*1.5, ny=p.y+Math.sin(a)*1.5;
+      ctx.strokeStyle="rgba(150,116,72,0.045)"; ctx.lineWidth=p.w;
+      ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(nx,ny);ctx.stroke();
+      p.x=nx;p.y=ny; if(p.x<0||p.x>W||p.y<0||p.y>H){p.x=Math.random()*W;p.y=Math.random()*H;} } }
+    return;
+  }
+  // pause when offscreen
+  new IntersectionObserver(([e]) => {
+    if(e.isIntersecting){ if(!raf) raf = requestAnimationFrame(frame); }
+    else { cancelAnimationFrame(raf); raf = null; }
+  },{threshold:0}).observe(cv);
+}
+
+/* ─────────────────────────────────────────────
+   4. DIAL — build indices + spokes
+   ───────────────────────────────────────────── */
+function buildDial(){
+  const idx = $("#indices"), sp = $("#spokes");
+  if(!idx) return;
+  for(let i=0;i<60;i++){
+    const a = (i/60)*Math.PI*2 - Math.PI/2;
+    const major = i%5===0;
+    const r1 = major ? 150 : 158, r2 = 166;
+    const l = document.createElementNS("http://www.w3.org/2000/svg","line");
+    l.setAttribute("x1", 200+Math.cos(a)*r1); l.setAttribute("y1", 200+Math.sin(a)*r1);
+    l.setAttribute("x2", 200+Math.cos(a)*r2); l.setAttribute("y2", 200+Math.sin(a)*r2);
+    l.setAttribute("stroke-width", major ? 1.6 : 0.5);
+    l.setAttribute("opacity","0");
+    idx.appendChild(l);
+  }
+  for(let i=0;i<24;i++){
+    const a = (i/24)*Math.PI*2;
+    const l = document.createElementNS("http://www.w3.org/2000/svg","line");
+    l.setAttribute("x1", 200+Math.cos(a)*34); l.setAttribute("y1", 200+Math.sin(a)*34);
+    l.setAttribute("x2", 200+Math.cos(a)*92); l.setAttribute("y2", 200+Math.sin(a)*92);
+    sp.appendChild(l);
+  }
+}
+
+/* ─────────────────────────────────────────────
+   5. ORBIT canvas (facets visual)
+   ───────────────────────────────────────────── */
+function orbit(){
+  const cv = $("#orbit"); if(!cv) return;
+  const ctx = cv.getContext("2d");
+  let W,H,DPR,raf=null,th=0;
+  const state = {p:0, pt:0};
+  function size(){
+    DPR=Math.min(devicePixelRatio||1,2); W=cv.clientWidth; H=cv.clientHeight;
+    cv.width=W*DPR; cv.height=H*DPR; ctx.setTransform(DPR,0,0,DPR,0,0);
+  }
+  function draw(){
+    th += RM ? 0 : 0.0022;
+    state.p = lerp(state.p, state.pt, 0.07);
+    ctx.clearRect(0,0,W,H);
+    const cx=W/2, cy=H/2, R=Math.min(W,H)*0.42;
+    // concentric arcs, each rotating at a different rate
+    for(let i=0;i<7;i++){
+      const r = R*(0.28 + i*0.12);
+      const spin = th*(1 + i*0.34) * (i%2 ? -1 : 1);
+      const span = (0.35 + 0.42*Math.sin(th*1.6 + i)) * Math.PI;
+      ctx.beginPath();
+      ctx.arc(cx, cy, r, spin, spin+span);
+      ctx.strokeStyle = i===3 ? `rgba(185,140,82,${0.55})` : `rgba(26,23,19,${0.10 + i*0.035})`;
+      ctx.lineWidth = i===3 ? 1.4 : 0.7;
+      ctx.stroke();
+    }
+    // radial ticks that respond to section progress
+    const ticks = 72;
+    for(let i=0;i<ticks;i++){
+      const a=(i/ticks)*Math.PI*2 + th*0.3;
+      const on = (i/ticks) <= state.p;
+      const r1=R*1.02, r2=R*(on?1.13:1.06);
+      ctx.beginPath();
+      ctx.moveTo(cx+Math.cos(a)*r1, cy+Math.sin(a)*r1);
+      ctx.lineTo(cx+Math.cos(a)*r2, cy+Math.sin(a)*r2);
+      ctx.strokeStyle = on ? "rgba(185,140,82,.75)" : "rgba(26,23,19,.14)";
+      ctx.lineWidth = on ? 1.1 : 0.6;
+      ctx.stroke();
+    }
+    ctx.beginPath(); ctx.arc(cx,cy,2.4,0,Math.PI*2);
+    ctx.fillStyle="rgba(26,23,19,.8)"; ctx.fill();
+    raf = RM ? null : requestAnimationFrame(draw);
+  }
+  size(); addEventListener("resize", size, {passive:true});
+  new IntersectionObserver(([e]) => {
+    if(e.isIntersecting){ if(!raf) raf=requestAnimationFrame(draw); }
+    else { cancelAnimationFrame(raf); raf=null; }
+  },{threshold:0}).observe(cv);
+  return state;
+}
+
+/* ─────────────────────────────────────────────
+   6. STATIC TEXTURE canvas (editorial media)
+   ───────────────────────────────────────────── */
+function textures(){
+  $$(".cv-noise").forEach(cv => {
+    const ctx = cv.getContext("2d");
+    const draw = () => {
+      const DPR=Math.min(devicePixelRatio||1,2), W=cv.clientWidth, H=cv.clientHeight;
+      cv.width=W*DPR; cv.height=H*DPR; ctx.setTransform(DPR,0,0,DPR,0,0);
+      const g = ctx.createLinearGradient(0,0,W,H);
+      g.addColorStop(0,"#E9E2D6"); g.addColorStop(.55,"#DCD2C0"); g.addColorStop(1,"#C6B79C");
+      ctx.fillStyle=g; ctx.fillRect(0,0,W,H);
+      // engraved contour lines — reads as a machined surface
+      const seed = +cv.dataset.seed || 1;
+      for(let i=0;i<70;i++){
+        ctx.beginPath();
+        const y0 = (i/70)*H*1.25 - H*0.12;
+        ctx.moveTo(-10, y0);
+        for(let x=-10;x<=W+10;x+=14){
+          const w = Math.sin((x*0.011)+(i*0.29)+seed) * 16 + Math.sin(x*0.004 + i*0.11)*26;
+          ctx.lineTo(x, y0 + w);
+        }
+        ctx.strokeStyle = `rgba(26,23,19,${0.05 + (i%7===0?0.09:0)})`;
+        ctx.lineWidth = i%7===0 ? 1 : 0.6;
+        ctx.stroke();
+      }
+      // soft light pool
+      const rg = ctx.createRadialGradient(W*.34,H*.3,0,W*.34,H*.3,Math.max(W,H)*.8);
+      rg.addColorStop(0,"rgba(255,252,244,.55)"); rg.addColorStop(1,"rgba(255,252,244,0)");
+      ctx.fillStyle=rg; ctx.fillRect(0,0,W,H);
+    };
+    draw();
+    addEventListener("resize", () => requestAnimationFrame(draw), {passive:true});
+  });
+}
+
+/* ─────────────────────────────────────────────
+   7. CURSOR + MAGNETIC
+   ───────────────────────────────────────────── */
+function cursor(){
+  if(!FINE || RM) return;
+  const dot=$("#cur"), ring=$("#cur-r");
+  const m={x:innerWidth/2,y:innerHeight/2}, r={x:m.x,y:m.y};
+  addEventListener("pointermove", e => { m.x=e.clientX; m.y=e.clientY; }, {passive:true});
+  // ring expands over anything clickable
+  $$("a,button").forEach(el => {
+    el.addEventListener("pointerenter", () => ring.classList.add("on"));
+    el.addEventListener("pointerleave", () => ring.classList.remove("on"));
+  });
+  // magnetic pull is reserved for deliberate targets — not every link on the page
+  const mags = $$(".btn, #side-tab a, .nav-links a");
+  mags.forEach(el => {
+    el.addEventListener("pointerenter", () => ring.classList.add("on"));
+    el.addEventListener("pointerleave", () => { ring.classList.remove("on"); el.style.transform=""; });
+    el.addEventListener("pointermove", e => {
+      const b = el.getBoundingClientRect();
+      const dx = e.clientX-(b.left+b.width/2), dy = e.clientY-(b.top+b.height/2);
+      if(Math.abs(dx) < b.width/2+60 && Math.abs(dy) < b.height/2+40)
+        el.style.transform = `translate(${dx*0.22}px, ${dy*0.28}px)`;
+    });
+    el.style.transition = "transform 480ms cubic-bezier(.25,1,.5,1)";
+  });
+  (function tick(){
+    dot.style.transform = `translate(${m.x}px, ${m.y}px)`;
+    r.x = lerp(r.x, m.x, 0.14); r.y = lerp(r.y, m.y, 0.14);
+    ring.style.transform = `translate(${r.x}px, ${r.y}px)`;
+    requestAnimationFrame(tick);
+  })();
+}
+
+/* ─────────────────────────────────────────────
+   8. MASTER SCROLL LOOP
+   ───────────────────────────────────────────── */
+function scrollEngine(orbitState){
+  const fill=$("#prog-fill"), num=$("#prog-num"), nav=$("#nav");
+  const mvSec=$("#movement"), mvPct=$("#mv-pct");
+  const ringOut=$("#ring-out"), ringMid=$("#ring-mid"), ringIn=$("#ring-in");
+  const indices=$$("#indices line"), spokes=$("#spokes"), hands=$("#hands"), dial=$("#dial");
+  const caps=$$(".dial-cap");
+  const hSec=$("#h-sec"), hMin=$("#h-min"), hHour=$("#h-hour");
+  const creed=$("#creed"), mqs=$$(".mq");
+  const facetRail=$(".facet-rail");
+  const pars=$$("[data-par]");
+
+  let sm=scrollY, lastY=scrollY, shown=0;
+  const prog = el => {
+    const r = el.getBoundingClientRect();
+    return clamp((-r.top) / (r.height - innerHeight));
+  };
+
+  function tick(){
+    const y = scrollY;
+    sm = lerp(sm, y, 0.12);
+
+    // page progress
+    const max = document.documentElement.scrollHeight - innerHeight;
+    const p = clamp(y/Math.max(max,1));
+    fill.style.transform = `scaleX(${p})`;
+    num.textContent = String(Math.round(p*100)).padStart(3,"0");
+
+    // nav auto-hide
+    if(y > innerHeight*0.4 && y > lastY + 4) nav.classList.add("hide");
+    else if(y < lastY - 4 || y < innerHeight*0.4) nav.classList.remove("hide");
+    lastY = y;
+
+    // ── pinned dial scrub ──
+    if(mvSec){
+      const t = prog(mvSec);
+      mvPct.textContent = String(Math.round(t*100)).padStart(3,"0");
+      const seg = (a,b) => clamp((t-a)/(b-a));
+      ringOut.style.strokeDashoffset = 1106*(1-seg(0,.22));
+      ringMid.style.strokeDashoffset = 880*(1-seg(.08,.32));
+      ringIn.style.strokeDashoffset  = 604*(1-seg(.30,.52));
+      const ip = seg(.18,.46);
+      indices.forEach((l,i) => l.style.opacity = clamp((ip*60 - i)*0.5));
+      spokes.style.opacity = seg(.46,.68)*0.5;
+      spokes.style.transform = `rotate(${t*420}deg)`; spokes.style.transformOrigin="200px 200px";
+      hands.style.opacity = seg(.62,.8);
+      const rot = t*360;
+      hSec.style.transform  = `rotate(${rot*4}deg)`;
+      hMin.style.transform  = `rotate(${rot*1.1}deg)`;
+      hHour.style.transform = `rotate(${rot*0.32}deg)`;
+      [hSec,hMin,hHour].forEach(h => h.style.transformOrigin="200px 200px");
+      dial.style.transform = `scale(${0.86 + seg(0,1)*0.14}) rotate(${(1-seg(0,.5))*-6}deg)`;
+      const stage = t<.28 ? 0 : t<.5 ? 1 : t<.74 ? 2 : 3;
+      caps.forEach((c,i) => c.classList.toggle("on", i===stage && t>0.02 && t<0.99));
+    }
+
+    // ── horizontal marquee ──
+    // travel is bounded by actual content width so a track never exposes empty space
+    if(creed){
+      const t = prog(creed);
+      mqs.forEach(m => {
+        const dir = parseFloat(m.dataset.mq);
+        const travel = Math.max(m.scrollWidth - innerWidth, 1);
+        const k = clamp(t * Math.abs(dir));
+        const x = dir >= 0 ? -k*travel : -travel + k*travel;
+        m.style.transform = `translate3d(${x}px,0,0)`;
+      });
+    }
+
+    // ── facets → orbit ──
+    if(facetRail && orbitState) orbitState.pt = prog(facetRail);
+
+    // ── parallax ──
+    pars.forEach(el => {
+      const r = el.getBoundingClientRect();
+      const c = (r.top + r.height/2 - innerHeight/2) / innerHeight;
+      el.style.transform = `translate3d(0, ${c * parseFloat(el.dataset.par) * 260}px, 0)`;
+    });
+
+    requestAnimationFrame(tick);
+  }
+  if(!RM) requestAnimationFrame(tick);
+  else { fill.style.transform="scaleX(1)"; }
+}
+
+/* ─────────────────────────────────────────────
+   9. PRELOADER → BOOT
+   ───────────────────────────────────────────── */
+function setup(){
+  doSplit(); buildDial(); textures(); flowField();
+  const oState = orbit();
+  cursor(); observe(); scrollEngine(oState);
+
+  // reduced-motion: the scrub loop never runs, so resolve the dial to its finished state
+  if(RM){
+    $("#ring-out").style.strokeDashoffset = 0;
+    $("#ring-mid").style.strokeDashoffset = 0;
+    $("#ring-in").style.strokeDashoffset  = 0;
+    $$("#indices line").forEach(l => l.style.opacity = 1);
+    $("#spokes").style.opacity = .5;
+    $("#hands").style.opacity = 1;
+    $("#mv-pct").textContent = "100";
+    $(".dial-cap:last-child").classList.add("on");
+    if(oState) oState.p = oState.pt = 1;
+  }
+
+  $$('a[href^="#"]').forEach(a => a.addEventListener("click", e => {
+    const t = document.querySelector(a.getAttribute("href"));
+    if(t){ e.preventDefault(); t.scrollIntoView({behavior: RM?"auto":"smooth", block:"start"}); }
+  }));
+
+  // line grouping is measured, so it must be redone when the width changes materially
+  let rw = innerWidth, rt = null;
+  addEventListener("resize", () => {
+    if(Math.abs(innerWidth-rw) < 80) return;
+    rw = innerWidth;
+    clearTimeout(rt);
+    rt = setTimeout(doSplit, 180);
+  }, {passive:true});
+}
+
+function preloader(){
+  const pre=$("#preload"), n=$("#pl-num"), bar=$("#pl-bar");
+  const dur = RM ? 1 : 1500, t0 = performance.now();
+  (function count(now){
+    const k = clamp((now-t0)/dur);
+    const eased = 1-Math.pow(1-k,3);
+    n.textContent = String(Math.round(eased*100)).padStart(2,"0");
+    bar.style.width = (eased*100)+"%";
+    if(k<1) requestAnimationFrame(count);
+    else setTimeout(() => {
+      pre.classList.add("done");
+      const hero = $("#hero .rv"); if(hero) hero.classList.add("in");
+      setTimeout(() => pre.remove(), 1600);
+    }, 180);
+  })(performance.now());
+}
+
+function boot(){
+  // splitting measures line breaks — do it only once the real faces are active,
+  // otherwise fallback metrics produce masks that don't match the final wrap
+  const fonts = (document.fonts && document.fonts.ready) ? document.fonts.ready : Promise.resolve();
+  const cap = new Promise(r => setTimeout(r, 2500));
+  Promise.race([fonts, cap]).then(() => { setup(); preloader(); });
+}
+
+if(document.readyState === "complete") boot();
+else addEventListener("load", boot);
+})();
+</script>
+</body>
+</html>
