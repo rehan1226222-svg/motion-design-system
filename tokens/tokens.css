@@ -1,0 +1,220 @@
+/* ============================================================
+   ATELIER — Premium editorial design system
+   Tokens only. Drop this above your stylesheet.
+   Two skins: [data-skin="maison"] (warm) / [data-skin="studio"] (cool)
+   ============================================================ */
+
+:root {
+  /* ---- NEUTRAL RAMP (warm-biased, never pure #fff / #000) ---- */
+  --ink-900: #0B0B0A;
+  --ink-800: #16150F;
+  --ink-700: #2A2823;
+  --ink-500: #56534B;
+  --ink-300: #8C877C;
+  --ink-200: #B4AFA4;
+  --ink-100: #D8D3C9;
+
+  --paper-000: #FFFDF9;
+  --paper-100: #F7F4EE;
+  --paper-200: #F0ECE4;
+  --paper-300: #E7E2D8;
+  --paper-400: #DAD4C8;
+
+  /* ---- ACCENTS (one per site. never two.) ---- */
+  --accent-sand:   #C9A87C;
+  --accent-oxblood:#4A1F22;
+  --accent-ink:    #16150F;
+
+  /* ---- SEMANTIC (rebound per skin below) ---- */
+  --bg:            var(--paper-100);
+  --bg-alt:        var(--paper-200);
+  --fg:            var(--ink-900);
+  --fg-muted:      var(--ink-500);
+  --fg-faint:      var(--ink-300);
+  --rule:          color-mix(in oklab, var(--fg) 12%, transparent);
+  --accent:        var(--accent-sand);
+
+  /* ---- TYPE FAMILIES ---- */
+  --font-display: "Canela Deck", "Ogg", "Instrument Serif", Georgia, serif;
+  --font-sans:    "Neue Haas Grotesk Display", "Helvetica Now Display", "Switzer", Inter, system-ui, sans-serif;
+  --font-mono:    "Söhne Mono", "Geist Mono", "JetBrains Mono", ui-monospace, monospace;
+
+  /* ---- FLUID TYPE SCALE (1.5 ratio, 390px → 1728px) ---- */
+  --t-mono:    0.6875rem;                                   /* 11px, fixed */
+  --t-micro:   0.75rem;                                     /* 12px, fixed */
+  --t-body-s:  clamp(0.8125rem, 0.78rem + 0.15vw, 0.875rem);
+  --t-body:    clamp(0.9375rem, 0.89rem + 0.22vw, 1.0625rem);
+  --t-body-l:  clamp(1.0625rem, 0.98rem + 0.38vw, 1.375rem);
+  --t-h4:      clamp(1.25rem, 1.10rem + 0.65vw, 1.75rem);
+  --t-h3:      clamp(1.75rem, 1.42rem + 1.45vw, 3rem);
+  --t-h2:      clamp(2.5rem, 1.82rem + 2.95vw, 5rem);
+  --t-h1:      clamp(3.5rem, 2.06rem + 6.2vw, 9rem);
+  --t-mega:    clamp(5rem, 1.5rem + 15vw, 18rem);           /* overflow type */
+
+  /* ---- TRACKING (the single biggest "premium" tell) ---- */
+  --track-mega:   -0.045em;   /* ≥80px display */
+  --track-h1:     -0.035em;
+  --track-h2:     -0.025em;
+  --track-h3:     -0.015em;
+  --track-body:    0em;
+  --track-caps:    0.18em;    /* letterspaced small caps */
+  --track-mono:    0.08em;
+
+  /* ---- LEADING ---- */
+  --lh-mega:  0.86;
+  --lh-h1:    0.92;
+  --lh-h2:    1.0;
+  --lh-h3:    1.1;
+  --lh-body:  1.55;
+  --lh-caps:  1.2;
+
+  /* ---- WEIGHTS (restraint: 3 max per site) ---- */
+  --w-light:  300;
+  --w-book:   400;
+  --w-medium: 500;
+
+  /* ---- SPACING (8px base, geometric above 48) ---- */
+  --s-1: 0.25rem;  --s-2: 0.5rem;   --s-3: 0.75rem;  --s-4: 1rem;
+  --s-5: 1.5rem;   --s-6: 2rem;     --s-7: 3rem;     --s-8: 4rem;
+  --s-9: 6rem;     --s-10: 8rem;    --s-11: 12rem;   --s-12: 16rem;
+
+  --section-y:  clamp(5rem, 3rem + 9vw, 12rem);
+  --gutter:     clamp(1.25rem, 0.6rem + 2.6vw, 3.5rem);
+  --container:  90rem;   /* 1440 */
+  --measure:    34ch;    /* body copy max — never wider */
+
+  /* ---- GRID ---- */
+  --cols: 12;
+  --col-gap: clamp(1rem, 0.5rem + 1.6vw, 2rem);
+
+  /* ---- RADII (near-zero. curves read cheap at this tier.) ---- */
+  --r-0: 0px;
+  --r-1: 2px;
+  --r-2: 4px;
+  --r-pill: 999px;
+
+  /* ---- BORDERS ---- */
+  --hairline: 1px solid var(--rule);
+
+  /* ---- ELEVATION (shadow is a last resort; prefer contrast + scale) ---- */
+  --shadow-lift: 0 1px 2px rgb(11 11 10 / 0.04), 0 8px 24px rgb(11 11 10 / 0.06);
+  --shadow-media: 0 24px 80px -24px rgb(11 11 10 / 0.28);
+
+  /* ---- MOTION: EASING ---- */
+  --ease-reveal: cubic-bezier(0.16, 1, 0.3, 1);      /* expo-out — entrances */
+  --ease-curtain: cubic-bezier(0.83, 0, 0.17, 1);    /* quint-in-out — transitions */
+  --ease-ui:     cubic-bezier(0.25, 1, 0.5, 1);      /* quart-out — hover/press */
+  --ease-drift:  cubic-bezier(0.33, 0, 0.15, 1);     /* long parallax / scrub */
+  --ease-linear: linear;                             /* marquees only */
+
+  /* ---- MOTION: DURATION LADDER ---- */
+  --d-instant: 120ms;   /* colour, opacity on small UI */
+  --d-fast:    240ms;   /* hover states, underline sweep */
+  --d-base:    480ms;   /* card/media reveal */
+  --d-slow:    900ms;   /* headline lines, mask wipes */
+  --d-epic:    1400ms;  /* page curtain, hero settle */
+
+  /* ---- MOTION: STAGGER ---- */
+  --stagger-line: 90ms;
+  --stagger-word: 60ms;
+  --stagger-char: 28ms;   /* ≤3 words only */
+  --stagger-grid: 70ms;
+
+  /* ---- MOTION: TRANSFORM DEFAULTS ---- */
+  --rise: 1.2em;        /* clip-reveal travel for text */
+  --lift: 8px;          /* hover lift */
+  --zoom-rest: 1.06;    /* media idle scale, settles to 1 */
+
+  /* ---- CURSOR ---- */
+  --cursor-size: 12px;
+  --cursor-size-hover: 64px;
+
+  /* ---- Z ---- */
+  --z-media: 1; --z-content: 10; --z-nav: 100; --z-cursor: 900; --z-curtain: 1000;
+
+  /* ---- GRAIN ---- */
+  --grain-opacity: 0.035;
+}
+
+/* ============ SKIN: MAISON (Cartier-lineage, warm ivory) ============ */
+[data-skin="maison"] {
+  --bg:       #F2EDE4;
+  --bg-alt:   #E9E2D6;
+  --fg:       #1A1713;
+  --fg-muted: #6B6459;
+  --fg-faint: #A29A8C;
+  --accent:   var(--accent-sand);
+  --font-heading: var(--font-display);
+  --heading-case: none;
+  --grain-opacity: 0.045;
+}
+
+/* ============ SKIN: STUDIO (product-editorial, cool paper) ============ */
+[data-skin="studio"] {
+  --bg:       #F5F4F2;
+  --bg-alt:   #EAE9E6;
+  --fg:       #0D0D0C;
+  --fg-muted: #5A5A57;
+  --fg-faint: #9B9B96;
+  --accent:   var(--accent-ink);
+  --font-heading: var(--font-sans);
+  --heading-case: lowercase;
+  --grain-opacity: 0.025;
+}
+
+/* ============ INVERTED SECTION (both skins) ============ */
+[data-invert] {
+  --bg: var(--ink-900);
+  --bg-alt: var(--ink-800);
+  --fg: var(--paper-000);
+  --fg-muted: var(--ink-200);
+  --fg-faint: var(--ink-300);
+  --rule: color-mix(in oklab, var(--fg) 16%, transparent);
+}
+
+/* ============ BASE ============ */
+html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  font-size: var(--t-body);
+  line-height: var(--lh-body);
+  letter-spacing: var(--track-body);
+  font-feature-settings: "kern" 1, "liga" 1;
+}
+
+h1, h2, h3 { font-family: var(--font-heading); font-weight: var(--w-light); text-transform: var(--heading-case); }
+h1 { font-size: var(--t-h1); line-height: var(--lh-h1); letter-spacing: var(--track-h1); }
+h2 { font-size: var(--t-h2); line-height: var(--lh-h2); letter-spacing: var(--track-h2); }
+h3 { font-size: var(--t-h3); line-height: var(--lh-h3); letter-spacing: var(--track-h3); }
+
+.caps {
+  font-family: var(--font-sans);
+  font-size: var(--t-micro);
+  font-weight: var(--w-book);
+  text-transform: uppercase;
+  letter-spacing: var(--track-caps);
+  line-height: var(--lh-caps);
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-size: var(--t-mono);
+  text-transform: uppercase;
+  letter-spacing: var(--track-mono);
+  color: var(--fg-faint);
+}
+
+p { max-width: var(--measure); color: var(--fg-muted); }
+
+/* ============ REDUCED MOTION ============ */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --d-instant: 1ms; --d-fast: 1ms; --d-base: 1ms;
+    --d-slow: 1ms; --d-epic: 1ms;
+    --stagger-line: 0ms; --stagger-word: 0ms; --stagger-char: 0ms; --stagger-grid: 0ms;
+    --rise: 0px; --lift: 0px; --zoom-rest: 1;
+  }
+  *, *::before, *::after { animation-duration: 1ms !important; transition-duration: 1ms !important; scroll-behavior: auto !important; }
+}
